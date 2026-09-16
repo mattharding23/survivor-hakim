@@ -1,0 +1,3 @@
+week,team,role
+1,LAC,win
+# week,team,role  — role: win (default) | loser (Wk6) | w15a | w15b

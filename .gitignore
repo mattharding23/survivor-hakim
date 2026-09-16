@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+outputs/
+data/cache/
+.odds_api_key
+secrets.env
+.DS_Store
