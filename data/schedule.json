@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 2,
-  "generated_at": "2026-09-17T13:43:31.890604+00:00",
+  "generated_at": "2026-09-17T13:48:53.534392+00:00",
   "games": [
     {
       "game_id": "2026_01_NE_SEA",
@@ -433,8 +433,8 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -278.0,
-      "away_moneyline": 225.0,
+      "home_moneyline": -290.0,
+      "away_moneyline": 235.0,
       "spread_line": 6.5
     },
     {

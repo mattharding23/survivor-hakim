@@ -157,14 +157,32 @@ function renderPctBars(pct, source) {
 // P(survive), the composite hakim_score-derived pick_score) rather than
 // LMS's EV(path)/future-value columns.
 // ---------------------------------------------------------------------
+const LOSERS_WEEK = 6; // Week 6: pick one of your Weeks 1-5 winners to LOSE -- doesn't consume a team
+
+function fmtPlanEntry(wk, team) {
+  // implied_path values are either a plain team abbr, a ["LOSE", team] pair
+  // (Loser's Week -- shown as "LOSE X", never "LOSE+X"), or a [teamA, teamB]
+  // pair (Week 15's two-pick week -- shown as "A+B"). Mirrors hakim_pipeline
+  // .py's own _fmt_plan() formatting exactly.
+  if (Array.isArray(team)) {
+    return team[0] === "LOSE" ? `W${wk}:LOSE ${team[1]}` : `W${wk}:${team.join("+")}`;
+  }
+  return `W${wk}:${team}`;
+}
+
 function renderHakimTable(teams, currentWeek) {
   const rows = [...teams].sort((a, b) => a.rank - b.rank);
   const cell = (color, text) => `<td class="scale-cell" style="background:${color};color:${textOn(color)}">${text}</td>`;
+  // Always show through Loser's Week (6) while it's still ahead -- every
+  // candidate's plan resolves a real week-6 decision under the hood, but a
+  // fixed "next 4 weeks" window can cut off before reaching it this early
+  // in the season, which hid that decision even though it's already made.
+  const planEndWeek = currentWeek <= LOSERS_WEEK ? LOSERS_WEEK : currentWeek + 3;
   const body = rows.map(t => {
     const plan = Object.entries(t.implied_path || {})
-      .filter(([wk]) => Number(wk) >= currentWeek)
-      .sort((a, b) => Number(a[0]) - Number(b[0])).slice(0, 4)
-      .map(([wk, team]) => `W${wk}:${Array.isArray(team) ? team.join("+") : team}`).join("  ");
+      .filter(([wk]) => Number(wk) >= currentWeek && Number(wk) <= planEndWeek)
+      .sort((a, b) => Number(a[0]) - Number(b[0]))
+      .map(([wk, team]) => fmtPlanEntry(wk, team)).join("  ");
     return `<tr class="${t.rank === 1 ? "is-rec" : ""}">
       <td>${t.rank}</td>
       <td class="team-cell">${logoImg(t.team)}<span>${t.team}</span></td>
@@ -182,7 +200,7 @@ function renderHakimTable(teams, currentWeek) {
     <div class="tablewrap"><table>
       <thead><tr>
         <th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>E[wks]</th><th>Wks Left</th>
-        <th>P(survive)</th><th>E[pt diff]</th><th>Score</th><th>Plan</th>
+        <th>P(survive)</th><th>E[pt diff]</th><th>Score</th><th>Plan (thru Wk ${planEndWeek})</th>
       </tr></thead>
       <tbody>${body}</tbody>
     </table></div>
