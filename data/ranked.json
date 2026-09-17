@@ -1,10 +1,10 @@
 {
   "week": 2,
-  "generated_at": "2026-09-17T13:31:00.778730+00:00",
+  "generated_at": "2026-09-17T13:36:43.554819+00:00",
   "mode": "main",
   "lives": 1,
   "lives_max": 2,
-  "double_dip": null,
+  "double_dip": "BAL",
   "realized_losses": 1,
   "n_participants": 305,
   "n_alive": 305,
@@ -63,11 +63,11 @@
       "exp_pool_opponents": 22.278373073574112,
       "exp_pool_share": 0.07304384614286594,
       "future_value": 0.26447499737925023,
-      "exp_weeks": 3.988061397361864,
-      "p_survive": 0.0032511027705334522,
-      "p_full_lives": 0.0032511027705334522,
-      "exp_point_diff": 141.0,
-      "hakim_score": 3.9203741157019816,
+      "exp_weeks": 3.990072195281588,
+      "p_survive": 0.0038118844025975696,
+      "p_full_lives": 0.0038118844025975696,
+      "exp_point_diff": 145.5,
+      "hakim_score": 3.9223918934820516,
       "implied_path": {
         "1": "LAC",
         "2": "BAL",
@@ -90,12 +90,12 @@
           "GB",
           "NYG"
         ],
-        "16": "NO",
+        "16": "BAL",
         "17": "JAX",
         "18": "KC"
       },
       "rank": 2,
-      "pick_score": 87.0
+      "pick_score": 87.1
     },
     {
       "team": "LA",
@@ -357,11 +357,11 @@
       "exp_pool_opponents": 3.4302311250561637,
       "exp_pool_share": 0.011246659426413652,
       "future_value": 0.1477911483052765,
-      "exp_weeks": 3.4870904475827778,
-      "p_survive": 0.002364365129202245,
-      "p_full_lives": 0.002364365129202245,
-      "exp_point_diff": 131.0,
-      "hakim_score": 3.4935373333395443,
+      "exp_weeks": 3.4885528007653215,
+      "p_survive": 0.002772193681399001,
+      "p_full_lives": 0.002772193681399001,
+      "exp_point_diff": 135.5,
+      "hakim_score": 3.4950111827379904,
       "implied_path": {
         "1": "LAC",
         "2": "DAL",
@@ -384,12 +384,12 @@
           "GB",
           "NYG"
         ],
-        "16": "NO",
+        "16": "BAL",
         "17": "JAX",
         "18": "KC"
       },
       "rank": 9,
-      "pick_score": 69.7
+      "pick_score": 69.8
     },
     {
       "team": "CHI",
@@ -399,11 +399,11 @@
       "exp_pool_opponents": 4.708642720090413,
       "exp_pool_share": 0.015438172852755453,
       "future_value": 0.15461757325294415,
-      "exp_weeks": 3.478396444103912,
-      "p_survive": 0.002908364656474379,
-      "p_full_lives": 0.002908364656474379,
-      "exp_point_diff": 123.5,
-      "hakim_score": 3.4797875772744113,
+      "exp_weeks": 3.4797114948052603,
+      "p_survive": 0.003481447764244084,
+      "p_full_lives": 0.003481447764244084,
+      "exp_point_diff": 129.0,
+      "hakim_score": 3.481122566259538,
       "implied_path": {
         "1": "LAC",
         "2": "CHI",
@@ -426,12 +426,12 @@
           "GB",
           "NYG"
         ],
-        "16": "NE",
+        "16": "BAL",
         "17": "JAX",
-        "18": "KC"
+        "18": "NE"
       },
       "rank": 10,
-      "pick_score": 69.4
+      "pick_score": 69.5
     },
     {
       "team": "SEA",
@@ -987,11 +987,11 @@
       "exp_pool_opponents": 0.2871906129827887,
       "exp_pool_share": 0.0009416085671566843,
       "future_value": 0.31409524162287555,
-      "exp_weeks": 2.198904912035331,
-      "p_survive": 0.0013401866259025808,
-      "p_full_lives": 0.0013401866259025808,
-      "exp_point_diff": 112.5,
-      "hakim_score": 2.2176312376514864,
+      "exp_weeks": 2.1995108929113565,
+      "p_survive": 0.0016042657243931697,
+      "p_full_lives": 0.0016042657243931697,
+      "exp_point_diff": 118.0,
+      "hakim_score": 2.218271684200248,
       "implied_path": {
         "1": "LAC",
         "2": "DET",
@@ -1014,9 +1014,9 @@
           "GB",
           "NYG"
         ],
-        "16": "NE",
+        "16": "BAL",
         "17": "JAX",
-        "18": "KC"
+        "18": "NE"
       },
       "rank": 24,
       "pick_score": 25.4
