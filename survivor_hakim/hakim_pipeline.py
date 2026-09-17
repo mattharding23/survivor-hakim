@@ -184,7 +184,7 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
         ranked=df, recommendation=(df.iloc[0].to_dict() if len(df) else None),
         base_path=base["path"], base_p_survive=base["p_survive"], base_exp_weeks=base["exp_weeks"],
         base_p_lives=base["p_lives"], base_exp_point_diff=base["exp_point_diff"],
-        used_counts=used0, winprob_matrix=wp, public_pct=public_pct, crowd=crowd,
+        used_counts=used0, winprob_matrix=wp, public_pct=public_pct, crowd=crowd, roster=roster,
         meta=dict(winprob_sources=", ".join(f"{k}:{v}" for k, v in
                                             (src[current_week].value_counts().to_dict().items()
                                              if current_week in src.columns else [])),
@@ -323,7 +323,41 @@ def _write(result: dict, cfg: Config, hcfg: HakimConfig) -> dict:
         lines.append(show.to_string(index=False))
 
     # charts (reuse base viz where the shapes line up)
+    pool_tag = f"Hakim — {result['mode'].title()} Pool"
     charts = []
+    try:
+        charts.append(str(viz.win_probability(
+            result["winprob_matrix"][w], cfg, out_dir / f"week_{w:02d}_hakim_win_probability.png",
+            pool_label=pool_tag)))
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] hakim win_probability failed: {e}")
+    try:
+        charts.append(str(viz.pick_distribution(
+            result["public_pct"], cfg, out_dir / f"week_{w:02d}_hakim_pick_distribution.png",
+            pool_label=f"{pool_tag} · {result['meta']['consensus'].get('source')}")))
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] hakim pick_distribution failed: {e}")
+    try:
+        charts.append(str(viz.best_picks(
+            df, cfg, out_dir / f"week_{w:02d}_hakim_best_picks.png", pool_label=pool_tag)))
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] hakim best_picks failed: {e}")
+    try:
+        roster = result.get("roster")
+        if roster is not None and len(roster.participants) > 0:
+            n_alive = roster.n_opponents_alive()
+            used_counts = {}
+            for opp in roster.alive():
+                for t in roster.used_by(opp, w + 1):
+                    used_counts[t] = used_counts.get(t, 0) + 1
+            remaining = pd.DataFrame([
+                dict(team=t, players_left=n_alive - used_counts.get(t, 0), total_players_left=n_alive)
+                for t in ABBRS])
+            charts.append(str(viz.people_remaining(
+                remaining, cfg, out_dir / f"week_{w:02d}_hakim_teams_remaining.png",
+                pool_label=pool_tag)))
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] hakim people_remaining failed: {e}")
     try:
         tbl = df.copy()
         tbl["ev_path"] = df["exp_weeks"]

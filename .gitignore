@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 outputs/
 data/cache/
+site/data/
 .odds_api_key
 secrets.env
 .DS_Store

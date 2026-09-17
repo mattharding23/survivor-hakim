@@ -18,6 +18,9 @@ on:
         required: false
         default: main
 
+permissions:
+  contents: write   # needed to push the gh-pages branch
+
 jobs:
   gate:
     runs-on: ubuntu-latest
@@ -64,14 +67,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Run the Hakim pipeline
+      - name: Generate site data
         run: >
-          python run_hakim.py
+          python export_site_data.py
           ${{ github.event.inputs.week && format('--week {0}', github.event.inputs.week) || '' }}
           --mode ${{ github.event.inputs.mode || 'main' }}
-          | tee -a "$GITHUB_STEP_SUMMARY"
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+
+      - name: Write recommendation to step summary
+        run: cat site/data/recommendation.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload recommendation as an artifact
         uses: actions/upload-artifact@v4
@@ -79,3 +84,9 @@ jobs:
           name: hakim-recommendation
           path: outputs/
           retention-days: 90
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
