@@ -62,7 +62,7 @@ function seqColor(hueRgb, lo, hi, v) {
   const mix = (i) => Math.round(255 + (hueRgb[i] - 255) * f);
   return `rgb(${mix(0)}, ${mix(1)}, ${mix(2)})`;
 }
-const REDS = [165, 15, 21], BLUES = [8, 81, 156], GREENS = [0, 109, 44];
+const REDS = [165, 15, 21], BLUES = [8, 81, 156], GREENS = [0, 109, 44], ORANGES = [166, 54, 3];
 
 // ---------------------------------------------------------------------
 // Tiny markdown renderer. The only input this ever sees is our own
@@ -171,6 +171,7 @@ function renderHakimTable(teams, currentWeek) {
       ${cell(winProbColor(t.win_prob), (t.win_prob * 100).toFixed(1) + "%")}
       ${cell(seqColor(REDS, 0, 0.35, t.pub_pick_pct), (t.pub_pick_pct * 100).toFixed(1) + "%")}
       ${cell(seqColor(BLUES, 0, 18, t.exp_weeks), t.exp_weeks.toFixed(2))}
+      ${cell(seqColor(ORANGES, 0, 18 - currentWeek, t.weeks_left ?? 0), t.weeks_left ?? 0)}
       <td>${(t.p_survive * 100).toFixed(1)}%</td>
       <td>${t.exp_point_diff >= 0 ? "+" : ""}${t.exp_point_diff.toFixed(1)}</td>
       ${cell(seqColor(GREENS, 0, 100, t.pick_score), t.pick_score.toFixed(0))}
@@ -180,11 +181,16 @@ function renderHakimTable(teams, currentWeek) {
   return `<h3>Ranked Available Teams</h3>
     <div class="tablewrap"><table>
       <thead><tr>
-        <th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>E[wks]</th>
+        <th>#</th><th>Team</th><th>Win %</th><th>Public %</th><th>E[wks]</th><th>Wks Left</th>
         <th>P(survive)</th><th>E[pt diff]</th><th>Score</th><th>Plan</th>
       </tr></thead>
       <tbody>${body}</tbody>
-    </table></div>`;
+    </table></div>
+    <p class="muted" style="margin-top:10px">
+      <b>Wks Left</b> = how many of the remaining weeks this season this team is still projected
+      to be a "strong" pick (win prob &gt; 62%) -- a rough read on how much longer you can afford
+      to save it instead of using it now.
+    </p>`;
 }
 
 // ---------------------------------------------------------------------

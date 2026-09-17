@@ -1,6 +1,6 @@
 {
   "week": 2,
-  "generated_at": "2026-09-17T13:36:43.554819+00:00",
+  "generated_at": "2026-09-17T13:43:31.902036+00:00",
   "mode": "main",
   "lives": 1,
   "lives_max": 2,
@@ -21,6 +21,7 @@
       "exp_pool_opponents": 92.90317601940872,
       "exp_pool_share": 0.30460057711281546,
       "future_value": 0.30578680920795803,
+      "weeks_left": 5,
       "exp_weeks": 4.365741193482534,
       "p_survive": 0.004057645588553952,
       "p_full_lives": 0.004057645588553952,
@@ -63,6 +64,7 @@
       "exp_pool_opponents": 22.278373073574112,
       "exp_pool_share": 0.07304384614286594,
       "future_value": 0.26447499737925023,
+      "weeks_left": 8,
       "exp_weeks": 3.990072195281588,
       "p_survive": 0.0038118844025975696,
       "p_full_lives": 0.0038118844025975696,
@@ -95,7 +97,7 @@
         "18": "KC"
       },
       "rank": 2,
-      "pick_score": 87.1
+      "pick_score": 96.1
     },
     {
       "team": "LA",
@@ -105,6 +107,7 @@
       "exp_pool_opponents": 4.094421898817402,
       "exp_pool_share": 0.013424334094483287,
       "future_value": 0.40007551103284666,
+      "weeks_left": 8,
       "exp_weeks": 3.8279125165093855,
       "p_survive": 0.0032463671070349733,
       "p_full_lives": 0.0032463671070349733,
@@ -137,7 +140,7 @@
         "18": "KC"
       },
       "rank": 3,
-      "pick_score": 81.5
+      "pick_score": 92.6
     },
     {
       "team": "KC",
@@ -147,6 +150,7 @@
       "exp_pool_opponents": 8.818291896028338,
       "exp_pool_share": 0.028912432445994552,
       "future_value": 0.3958996607232635,
+      "weeks_left": 5,
       "exp_weeks": 3.76420101921017,
       "p_survive": 0.003342338141331042,
       "p_full_lives": 0.003342338141331042,
@@ -179,7 +183,7 @@
         "18": "HOU"
       },
       "rank": 4,
-      "pick_score": 79.3
+      "pick_score": 89.3
     },
     {
       "team": "PHI",
@@ -189,6 +193,7 @@
       "exp_pool_opponents": 36.986478802837944,
       "exp_pool_share": 0.1212671436158621,
       "future_value": 0.15537215966192208,
+      "weeks_left": 5,
       "exp_weeks": 3.8594731352536478,
       "p_survive": 0.00299158881350551,
       "p_full_lives": 0.00299158881350551,
@@ -221,7 +226,7 @@
         "18": "KC"
       },
       "rank": 5,
-      "pick_score": 82.6
+      "pick_score": 88.7
     },
     {
       "team": "BUF",
@@ -231,6 +236,7 @@
       "exp_pool_opponents": 4.692985100048659,
       "exp_pool_share": 0.015386836393602162,
       "future_value": 0.3029049684830977,
+      "weeks_left": 6,
       "exp_weeks": 3.6372847055496487,
       "p_survive": 0.0031516067295069426,
       "p_full_lives": 0.0031516067295069426,
@@ -263,7 +269,7 @@
         "18": "HOU"
       },
       "rank": 6,
-      "pick_score": 74.9
+      "pick_score": 85.0
     },
     {
       "team": "TB",
@@ -273,6 +279,7 @@
       "exp_pool_opponents": 93.21917321675393,
       "exp_pool_share": 0.3056366334975539,
       "future_value": 0.008133639683865601,
+      "weeks_left": 1,
       "exp_weeks": 3.9819773700331513,
       "p_survive": 0.0038015647393616916,
       "p_full_lives": 0.0038015647393616916,
@@ -305,7 +312,7 @@
         "18": "KC"
       },
       "rank": 7,
-      "pick_score": 86.8
+      "pick_score": 84.8
     },
     {
       "team": "NE",
@@ -315,6 +322,7 @@
       "exp_pool_opponents": 3.159971973449273,
       "exp_pool_share": 0.010360563847374665,
       "future_value": 0.3251278663178738,
+      "weeks_left": 6,
       "exp_weeks": 3.5681656132041377,
       "p_survive": 0.003418341571447954,
       "p_full_lives": 0.003418341571447954,
@@ -347,7 +355,7 @@
         "18": "KC"
       },
       "rank": 8,
-      "pick_score": 72.5
+      "pick_score": 82.5
     },
     {
       "team": "DAL",
@@ -357,6 +365,7 @@
       "exp_pool_opponents": 3.4302311250561637,
       "exp_pool_share": 0.011246659426413652,
       "future_value": 0.1477911483052765,
+      "weeks_left": 3,
       "exp_weeks": 3.4885528007653215,
       "p_survive": 0.002772193681399001,
       "p_full_lives": 0.002772193681399001,
@@ -389,7 +398,7 @@
         "18": "KC"
       },
       "rank": 9,
-      "pick_score": 69.8
+      "pick_score": 79.3
     },
     {
       "team": "CHI",
@@ -399,6 +408,7 @@
       "exp_pool_opponents": 4.708642720090413,
       "exp_pool_share": 0.015438172852755453,
       "future_value": 0.15461757325294415,
+      "weeks_left": 3,
       "exp_weeks": 3.4797114948052603,
       "p_survive": 0.003481447764244084,
       "p_full_lives": 0.003481447764244084,
@@ -431,7 +441,7 @@
         "18": "NE"
       },
       "rank": 10,
-      "pick_score": 69.5
+      "pick_score": 78.8
     },
     {
       "team": "SEA",
@@ -441,6 +451,7 @@
       "exp_pool_opponents": 4.739957960173921,
       "exp_pool_share": 0.015540845771062036,
       "future_value": 0.26195475445505634,
+      "weeks_left": 7,
       "exp_weeks": 3.4747516937746616,
       "p_survive": 0.0027679866724443594,
       "p_full_lives": 0.0027679866724443594,
@@ -473,7 +484,7 @@
         "18": "HOU"
       },
       "rank": 11,
-      "pick_score": 69.3
+      "pick_score": 78.6
     },
     {
       "team": "CAR",
@@ -483,6 +494,7 @@
       "exp_pool_opponents": 8.53192432831308,
       "exp_pool_share": 0.027973522387911738,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 3.32490930194277,
       "p_survive": 0.0033722946506741015,
       "p_full_lives": 0.0033722946506741015,
@@ -515,7 +527,7 @@
         "18": "KC"
       },
       "rank": 12,
-      "pick_score": 64.2
+      "pick_score": 72.1
     },
     {
       "team": "GB",
@@ -525,6 +537,7 @@
       "exp_pool_opponents": 11.37589910441743,
       "exp_pool_share": 0.03729802985054895,
       "future_value": 0.21571743480779773,
+      "weeks_left": 5,
       "exp_weeks": 3.3207242932102043,
       "p_survive": 0.0025882508384283288,
       "p_full_lives": 0.0025882508384283288,
@@ -557,7 +570,7 @@
         "18": "NE"
       },
       "rank": 13,
-      "pick_score": 64.0
+      "pick_score": 71.5
     },
     {
       "team": "DEN",
@@ -567,6 +580,7 @@
       "exp_pool_opponents": 0.6319943946898574,
       "exp_pool_share": 0.002072112769474942,
       "future_value": 0.18580529179117772,
+      "weeks_left": 5,
       "exp_weeks": 3.2553963812955966,
       "p_survive": 0.0026261723441431063,
       "p_full_lives": 0.0026261723441431063,
@@ -599,7 +613,7 @@
         "18": "KC"
       },
       "rank": 14,
-      "pick_score": 61.8
+      "pick_score": 70.6
     },
     {
       "team": "HOU",
@@ -609,6 +623,7 @@
       "exp_pool_opponents": 1.2639887893797148,
       "exp_pool_share": 0.004144225538949884,
       "future_value": 0.06889396210506889,
+      "weeks_left": 4,
       "exp_weeks": 3.2423720273404473,
       "p_survive": 0.0028586811279435248,
       "p_full_lives": 0.0028586811279435248,
@@ -641,7 +656,7 @@
         "18": "KC"
       },
       "rank": 15,
-      "pick_score": 61.3
+      "pick_score": 69.9
     },
     {
       "team": "ATL",
@@ -651,6 +666,7 @@
       "exp_pool_opponents": 0.6319943946898574,
       "exp_pool_share": 0.002072112769474942,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 2.6699683680635014,
       "p_survive": 0.0021688432882484617,
       "p_full_lives": 0.0021688432882484617,
@@ -683,7 +699,7 @@
         "18": "KC"
       },
       "rank": 16,
-      "pick_score": 41.6
+      "pick_score": 47.5
     },
     {
       "team": "NYJ",
@@ -693,6 +709,7 @@
       "exp_pool_opponents": 0.3139395841762044,
       "exp_pool_share": 0.001029310112053129,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 2.6274371178438187,
       "p_survive": 0.0025604689668492367,
       "p_full_lives": 0.0025604689668492367,
@@ -725,7 +742,7 @@
         "18": "KC"
       },
       "rank": 17,
-      "pick_score": 40.1
+      "pick_score": 45.9
     },
     {
       "team": "JAX",
@@ -735,6 +752,7 @@
       "exp_pool_opponents": 0.43220036791333694,
       "exp_pool_share": 0.0014170503866011046,
       "future_value": 0.026177649769797307,
+      "weeks_left": 2,
       "exp_weeks": 2.598814891520306,
       "p_survive": 0.0019889031491205967,
       "p_full_lives": 0.0019889031491205967,
@@ -767,7 +785,7 @@
         "18": "KC"
       },
       "rank": 18,
-      "pick_score": 39.1
+      "pick_score": 44.7
     },
     {
       "team": "CIN",
@@ -777,6 +795,7 @@
       "exp_pool_opponents": 0.625815197985429,
       "exp_pool_share": 0.0020518531081489474,
       "future_value": 0.15251806654213168,
+      "weeks_left": 6,
       "exp_weeks": 2.585936600651571,
       "p_survive": 0.0021064596038625804,
       "p_full_lives": 0.0021064596038625804,
@@ -809,7 +828,7 @@
         "18": "NE"
       },
       "rank": 19,
-      "pick_score": 38.7
+      "pick_score": 44.2
     },
     {
       "team": "ARI",
@@ -819,6 +838,7 @@
       "exp_pool_opponents": 0.3159971973449287,
       "exp_pool_share": 0.001036056384737471,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 2.5457838583569674,
       "p_survive": 0.0025947342166505543,
       "p_full_lives": 0.0025947342166505543,
@@ -851,7 +871,7 @@
         "18": "KC"
       },
       "rank": 20,
-      "pick_score": 37.3
+      "pick_score": 42.6
     },
     {
       "team": "WAS",
@@ -861,6 +881,7 @@
       "exp_pool_opponents": 0.3159971973449287,
       "exp_pool_share": 0.001036056384737471,
       "future_value": 0.005826882208697944,
+      "weeks_left": 1,
       "exp_weeks": 2.405416942383249,
       "p_survive": 0.0019816630037392284,
       "p_full_lives": 0.0019816630037392284,
@@ -893,7 +914,7 @@
         "18": "KC"
       },
       "rank": 21,
-      "pick_score": 32.5
+      "pick_score": 37.1
     },
     {
       "team": "MIN",
@@ -903,6 +924,7 @@
       "exp_pool_opponents": 0.3159971973449287,
       "exp_pool_share": 0.001036056384737471,
       "future_value": 0.08044544644347054,
+      "weeks_left": 1,
       "exp_weeks": 2.2800271846925773,
       "p_survive": 0.0018111117676926271,
       "p_full_lives": 0.0018111117676926271,
@@ -935,7 +957,7 @@
         "18": "NE"
       },
       "rank": 22,
-      "pick_score": 28.2
+      "pick_score": 32.2
     },
     {
       "team": "PIT",
@@ -945,6 +967,7 @@
       "exp_pool_opponents": 0.3057091315013073,
       "exp_pool_share": 0.0010023250213157615,
       "future_value": 0.03352043116473066,
+      "weeks_left": 1,
       "exp_weeks": 2.240448075282944,
       "p_survive": 0.001581381438837777,
       "p_full_lives": 0.001581381438837777,
@@ -977,7 +1000,7 @@
         "18": "KC"
       },
       "rank": 23,
-      "pick_score": 26.8
+      "pick_score": 30.6
     },
     {
       "team": "DET",
@@ -987,6 +1010,7 @@
       "exp_pool_opponents": 0.2871906129827887,
       "exp_pool_share": 0.0009416085671566843,
       "future_value": 0.31409524162287555,
+      "weeks_left": 7,
       "exp_weeks": 2.1995108929113565,
       "p_survive": 0.0016042657243931697,
       "p_full_lives": 0.0016042657243931697,
@@ -1019,7 +1043,7 @@
         "18": "NE"
       },
       "rank": 24,
-      "pick_score": 25.4
+      "pick_score": 29.0
     },
     {
       "team": "LV",
@@ -1029,6 +1053,7 @@
       "exp_pool_opponents": 0.303651518332583,
       "exp_pool_share": 0.0009955787486314197,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 2.154466628809809,
       "p_survive": 0.0016968995604647443,
       "p_full_lives": 0.0016968995604647443,
@@ -1061,7 +1086,7 @@
         "18": "KC"
       },
       "rank": 25,
-      "pick_score": 23.8
+      "pick_score": 27.2
     },
     {
       "team": "IND",
@@ -1071,6 +1096,7 @@
       "exp_pool_opponents": 0.0,
       "exp_pool_share": 0.0,
       "future_value": 0.04210913483617836,
+      "weeks_left": 1,
       "exp_weeks": 2.078442982214127,
       "p_survive": 0.0015258900742351259,
       "p_full_lives": 0.0015258900742351259,
@@ -1103,7 +1129,7 @@
         "18": "NE"
       },
       "rank": 26,
-      "pick_score": 21.2
+      "pick_score": 24.3
     },
     {
       "team": "TEN",
@@ -1113,6 +1139,7 @@
       "exp_pool_opponents": 0.0,
       "exp_pool_share": 0.0,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 2.0077119175983658,
       "p_survive": 0.0013322920455794785,
       "p_full_lives": 0.0013322920455794785,
@@ -1145,7 +1172,7 @@
         "18": "KC"
       },
       "rank": 27,
-      "pick_score": 18.8
+      "pick_score": 21.5
     },
     {
       "team": "NYG",
@@ -1155,6 +1182,7 @@
       "exp_pool_opponents": 0.3159971973449287,
       "exp_pool_share": 0.001036056384737471,
       "future_value": 0.1341454597727698,
+      "weeks_left": 3,
       "exp_weeks": 1.9904786605227647,
       "p_survive": 0.0013699527816916004,
       "p_full_lives": 0.0013699527816916004,
@@ -1187,7 +1215,7 @@
         "18": "NE"
       },
       "rank": 28,
-      "pick_score": 18.2
+      "pick_score": 20.8
     },
     {
       "team": "CLE",
@@ -1197,6 +1225,7 @@
       "exp_pool_opponents": 0.0,
       "exp_pool_share": 0.0,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 1.93733059657058,
       "p_survive": 0.0013777408871233883,
       "p_full_lives": 0.0013777408871233883,
@@ -1229,7 +1258,7 @@
         "18": "KC"
       },
       "rank": 29,
-      "pick_score": 16.4
+      "pick_score": 18.7
     },
     {
       "team": "NO",
@@ -1239,6 +1268,7 @@
       "exp_pool_opponents": 0.0,
       "exp_pool_share": 0.0,
       "future_value": 0.012926601795730474,
+      "weeks_left": 1,
       "exp_weeks": 1.87720709824759,
       "p_survive": 0.0011183047890731476,
       "p_full_lives": 0.0011183047890731476,
@@ -1271,7 +1301,7 @@
         "18": "KC"
       },
       "rank": 30,
-      "pick_score": 14.3
+      "pick_score": 16.3
     },
     {
       "team": "MIA",
@@ -1281,6 +1311,7 @@
       "exp_pool_opponents": 0.0,
       "exp_pool_share": 0.0,
       "future_value": 0.0,
+      "weeks_left": 0,
       "exp_weeks": 1.4624106199108804,
       "p_survive": 0.0006542652572084037,
       "p_full_lives": 0.0006542652572084037,
@@ -1324,6 +1355,7 @@
     "exp_pool_opponents": 92.90317601940872,
     "exp_pool_share": 0.30460057711281546,
     "future_value": 0.30578680920795803,
+    "weeks_left": 5,
     "exp_weeks": 4.365741193482534,
     "p_survive": 0.004057645588553952,
     "p_full_lives": 0.004057645588553952,
