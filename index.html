@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survivor Hakim</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Survivor Hakim</h1>
+    <div class="lives-stat">
+      <div class="pip-row" id="lives-pips"></div>
+      <span id="lives-text" class="pool-size"></span>
+    </div>
+    <p id="dd-line" class="muted"></p>
+    <p id="week-line" class="muted">Loading…</p>
+  </header>
+
+  <main>
+    <section id="pool" aria-label="Hakim league data">
+      <h2>This week</h2>
+      <span class="section-sub" id="pool-sub">scohak.com "Survivor Football League"</span>
+
+      <div class="table-panel">
+        <h3>Public Pick Distribution <span class="muted" id="pct-source"></span></h3>
+        <div class="col-labels"><span></span><span>Team</span><span></span><span class="r">Public %</span></div>
+        <div id="pct-bars" class="bars"></div>
+      </div>
+
+      <div id="ranked-table-wrap" class="table-panel"></div>
+
+      <div class="chart-viewer">
+        <div class="chart-viewer-head">
+          <h3>Charts</h3>
+          <select id="chart-select"></select>
+        </div>
+        <img id="chart-img" alt="Chart" loading="lazy">
+      </div>
+    </section>
+
+    <section id="recommendation" aria-label="Recommendation">
+      <h2>Full recommendation</h2>
+      <article id="recommendation-md" class="markdown">
+        <p class="muted">Loading…</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="muted">Generated automatically every Wednesday. Static data only — nothing here is fetched live. Private -- not linked anywhere.</p>
+    <p class="caption">Matt Harding &nbsp;·&nbsp; nflverse &nbsp;·&nbsp; The Odds API &nbsp;·&nbsp; SurvivorGrid</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

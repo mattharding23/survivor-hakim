@@ -1,0 +1,128 @@
+/* Same design system as survivor-lms's site: matches the branded chart PNGs
+   (survivor_core/viz.py) -- clean white ground, bold left-aligned titles,
+   muted grey secondary text, thin light gridlines, a red->amber->green
+   win-probability scale, team brand colours as the only strong accent, and
+   a gold highlight on the recommended pick. */
+:root{
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #fbfbfc;
+  --ink: #1a1a1a;
+  --ink-muted: #5b636a;
+  --line: #e8ebee;
+  --border: #c9ced3;
+  --stripe: #f6f7f8;
+  --divider: #333333;
+  --red: #bf1029;
+  --amber: #d9a441;
+  --green: #3f8f29;
+  --rec-bg: #fff6da;
+  --rec-border: #e0b000;
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 0 20px 48px;
+}
+main{ max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+h1{ font-size: 1.7rem; font-weight: 800; margin: 0; letter-spacing: -.01em; }
+h2{ font-size: 1.2rem; font-weight: 800; margin: 0 0 2px; color: var(--ink); }
+h2 + .section-sub{ display: block; margin: 0 0 14px; }
+h3{
+  font-size: .78rem; margin: 0 0 12px; color: var(--ink-muted);
+  text-transform: uppercase; letter-spacing: .05em; font-weight: 700;
+}
+.muted{ color: var(--ink-muted); font-size: .85rem; }
+.section-sub{ color: var(--ink-muted); font-size: .85rem; }
+
+.page-header{ max-width: 960px; margin: 32px auto 8px; display: flex; flex-direction: column; gap: 4px; }
+.page-footer{
+  max-width: 960px; margin: 8px auto 0; padding-top: 14px; border-top: 1px solid var(--divider);
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+}
+.caption{ font-size: .74rem; color: var(--ink-muted); letter-spacing: .01em; }
+.pool-size{ margin: 0; font-size: 1rem; font-weight: 700; color: var(--ink); }
+
+/* Life tracker -- 2-life main pool (or 1 for consolation): filled dot = life
+   still held, crossed dot = a loss already realized against real results. */
+.lives-stat{ display: flex; align-items: center; gap: 10px; margin-top: 2px; }
+.pip-row{ display: flex; gap: 6px; }
+.pip{ width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--border); }
+.pip.alive{ background: var(--green); border-color: var(--green); }
+.pip.lost{ background: transparent; border-color: var(--red); position: relative; }
+.pip.lost::after{
+  content: ""; position: absolute; inset: 2px; background: var(--red); border-radius: 1px;
+  transform: rotate(45deg) scale(.7);
+}
+
+.table-panel + .table-panel{ margin-top: 20px; }
+.table-panel h3{ margin: 0 0 10px; }
+.col-labels{
+  display: grid; grid-template-columns: 22px 38px 1fr 40px; gap: 8px;
+  padding-bottom: 8px; border-bottom: 1.5px solid var(--divider);
+  color: var(--ink-muted); font-weight: 700; font-size: .7rem; text-transform: uppercase; letter-spacing: .04em;
+}
+.col-labels .r{ text-align: right; }
+.bars{ display: flex; flex-direction: column; }
+.bar-row{
+  display: grid; grid-template-columns: 22px 38px 1fr 40px; align-items: center; gap: 8px;
+  font-size: .85rem; padding: 7px 0;
+}
+.bar-row .logo{ width: 18px; height: 18px; object-fit: contain; }
+.bar-row .abbr{ font-weight: 700; font-variant-numeric: tabular-nums; }
+.bar-track{ background: var(--line); border-radius: 2px; height: 11px; overflow: hidden; }
+.bar-fill{ display: block; height: 100%; opacity: .92; } /* span is inline by default -- width is a no-op without this */
+.bar-row .pct{ text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.tablewrap{ overflow-x: auto; }
+table{ width: 100%; border-collapse: collapse; font-size: .85rem; }
+th, td{ text-align: left; padding: 7px 8px; font-variant-numeric: tabular-nums; }
+th{
+  color: var(--ink-muted); font-weight: 700; font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .04em; border-bottom: 1.5px solid var(--divider); padding-bottom: 8px;
+}
+tbody tr:nth-child(even){ background: var(--stripe); }
+tbody tr.is-rec{ background: var(--rec-bg); outline: 1.5px solid var(--rec-border); outline-offset: -1.5px; }
+td.team-cell{ display: flex; align-items: center; gap: 7px; font-weight: 700; }
+td.team-cell img{ width: 18px; height: 18px; object-fit: contain; }
+td.scale-cell{ font-weight: 700; border-radius: 3px; }
+td.plan-cell{ font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-size: .76rem; color: var(--ink-muted); white-space: nowrap; }
+
+.table-panel{
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 6px; padding: 16px 18px;
+}
+.table-panel:empty{ display: none; }
+
+.chart-viewer{
+  margin-top: 20px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 6px; padding: 16px 18px;
+}
+.chart-viewer-head{ display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.chart-viewer-head h3{ margin: 0; }
+.chart-viewer select{
+  font: inherit; font-weight: 600; font-size: .82rem; padding: 6px 10px; border-radius: 6px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--ink);
+}
+.chart-viewer img{ display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
+
+.markdown{ background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 20px 24px; }
+.markdown h1{ font-size: 1.3rem; font-weight: 800; }
+.markdown h2, .markdown h3{
+  font-size: 1rem; text-transform: none; letter-spacing: 0; font-weight: 800; color: var(--ink);
+  margin: 18px 0 8px; padding: 0;
+}
+.markdown p{ margin: 8px 0; }
+.markdown ul{ margin: 8px 0; padding-left: 20px; }
+.markdown blockquote{
+  margin: 10px 0; padding: 8px 14px; border-left: 3px solid var(--amber);
+  background: var(--bg); color: var(--ink-muted); font-size: .9rem;
+}
+.markdown code{ background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; font-size: .85em; }
+.markdown table{ margin: 10px 0; }
+.markdown table th{ border-bottom: 1.5px solid var(--divider); }
+.markdown table td{ border-bottom: 1px solid var(--line); white-space: nowrap; }
