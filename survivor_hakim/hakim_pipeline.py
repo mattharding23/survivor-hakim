@@ -116,7 +116,7 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
             rows.append(dict(team=t, team_name=display(t), win_prob=pw,
                              p_lose=1 - pw if pd.notna(pw) else np.nan,
                              pub_pick_pct=0.0, exp_pool_opponents=0.0, exp_pool_share=0.0,
-                             future_value=0.0, exp_weeks=r["exp_weeks"], p_survive=r["p_survive"],
+                             future_value=0.0, weeks_left=0, exp_weeks=r["exp_weeks"], p_survive=r["p_survive"],
                              p_full_lives=r["p_lives"][-1], exp_point_diff=r["exp_point_diff"],
                              implied_path=r["path"]))
     elif current_week == TWO_PICK_WEEK:
@@ -130,7 +130,7 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
                 joint = float(wp.loc[a, current_week] * wp.loc[b, current_week])
                 rows.append(dict(team=f"{a}+{b}", team_name=f"{a} + {b}", win_prob=joint,
                                  pub_pick_pct=0.0, exp_pool_opponents=0.0, exp_pool_share=0.0,
-                                 future_value=0.0, exp_weeks=r["exp_weeks"], p_survive=r["p_survive"],
+                                 future_value=0.0, weeks_left=0, exp_weeks=r["exp_weeks"], p_survive=r["p_survive"],
                                  p_full_lives=r["p_lives"][-1], exp_point_diff=r["exp_point_diff"],
                                  implied_path=r["path"]))
     else:
@@ -142,17 +142,19 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
             exp_share = float(crowd.loc[t, "exp_share"]) if t in crowd.index else 0.0
             pub = float(crowd.loc[t, "pub_pct"]) if t in crowd.index else 0.0
             fv = 0.0
+            weeks_left = 0  # how many future weeks this team is still a "strong" (>fv_threshold) play
             for k in range(current_week + 1, cfg.n_weeks + 1):
                 p = wp.loc[t, k] if k in wp.columns else np.nan
                 if pd.notna(p) and p > hcfg.engine.fv_threshold:
                     fv += (hcfg.engine.fv_discount ** (k - current_week)) * (p - hcfg.engine.fv_threshold)
+                    weeks_left += 1
             score = (r["exp_weeks"]
                      - hcfg.consensus_weeks_penalty * exp_share
                      + hcfg.pointdiff_weight * np.tanh(r["exp_point_diff"] / 40.0))
             rows.append(dict(
                 team=t, team_name=display(t), win_prob=float(wp.loc[t, current_week]),
                 pub_pick_pct=pub, exp_pool_opponents=float(crowd.loc[t, "exp_opponents"]) if t in crowd.index else 0.0,
-                exp_pool_share=exp_share, future_value=fv,
+                exp_pool_share=exp_share, future_value=fv, weeks_left=weeks_left,
                 exp_weeks=r["exp_weeks"], p_survive=r["p_survive"], p_full_lives=r["p_lives"][-1],
                 exp_point_diff=r["exp_point_diff"], hakim_score=score,
                 implied_path=r["path"]))
@@ -176,8 +178,12 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
     sort_col = "hakim_score" if "hakim_score" in df.columns else "exp_weeks"
     df = df.sort_values(sort_col, ascending=False).reset_index(drop=True)
     df["rank"] = df.index + 1
-    lo, hi = df["exp_weeks"].min(), df["exp_weeks"].max()
-    df["pick_score"] = ((df["exp_weeks"] - lo) / (hi - lo) * 100).round(1) if hi > lo else 50.0
+    # Rescale the SAME column the ranking is sorted by (not exp_weeks, which
+    # ignores the crowd-avoidance penalty and point-diff nudge baked into
+    # hakim_score) -- otherwise "Score" and "#" can silently disagree on
+    # order whenever a popular team's penalty outweighs its raw exp_weeks.
+    lo, hi = df[sort_col].min(), df[sort_col].max()
+    df["pick_score"] = ((df[sort_col] - lo) / (hi - lo) * 100).round(1) if hi > lo else 50.0
 
     result = dict(
         mode=mode, week=current_week, lives=L, double_dip=dd, dd_reco=dd_reco,
