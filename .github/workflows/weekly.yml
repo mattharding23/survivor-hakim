@@ -16,7 +16,7 @@ on:
       mode:
         description: "main or consolation"
         required: false
-        default: main
+        default: consolation
 
 permissions:
   contents: write   # needed to push the gh-pages branch
@@ -71,7 +71,7 @@ jobs:
         run: >
           python export_site_data.py
           ${{ github.event.inputs.week && format('--week {0}', github.event.inputs.week) || '' }}
-          --mode ${{ github.event.inputs.mode || 'main' }}
+          --mode ${{ github.event.inputs.mode || 'consolation' }}
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
