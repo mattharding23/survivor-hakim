@@ -39,6 +39,7 @@ _RANK_PREFIX_RE = re.compile(r"^\s*\d+\.\s*")
 LOSERS_WEEK = 6
 TWO_PICK_WEEK = 15
 WP_LO, WP_HI = 0.02, 0.995
+MAIN_LIVES = 2   # fixed by league rules, independent of any --lives override
 
 
 # --------------------------------------------------------------------------- #
@@ -88,7 +89,15 @@ def load_all_picks_roster(cfg: Config, hcfg: HakimConfig) -> Roster | None:
     df = pd.read_csv(f, dtype=str, encoding="utf-8-sig").fillna("")
     wk_cols = [(c, int(_WK_COL_RE.match(c).group(1))) for c in df.columns
               if _WK_COL_RE.match(c)]
+    # In Consolation mode, the export lists entrants who already burned both
+    # Main lives to get there -- every one of them already shows 2 realized
+    # losses in the file. Those got them INTO Consolation, they aren't a
+    # Consolation loss, so offset the elimination threshold by MAIN_LIVES or
+    # everyone in the file reads as OUT immediately (verified via a manual
+    # run before this fix: "70 entrants, 0 alive").
     lives = hcfg.lives_for_mode()
+    if hcfg.mode == "consolation":
+        lives += MAIN_LIVES
 
     rows = []
     for _, r in df.iterrows():
