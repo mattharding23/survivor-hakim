@@ -4,15 +4,15 @@
 - Double-Dip team: **BAL** (usable 2×; 3× if also the Wk6 loser)
 - Win-prob sources: odds-api:32
 - Public pick %: survivorgrid
-- Opponent roster: all_picks.csv (70 entrants, 0 alive)
+- Opponent roster: all_picks.csv (70 entrants, 70 alive)
 - Teams used: LAC×1, TB×1
 
-## ✅ Week 3 pick: **KC (Kansas City Chiefs)**
-- Market win probability: **84.1%**  |  public 39.7%
-- **Expected weeks survived (of 18, 1 lives): 4.2**
-- P(reach season end still alive) = 0.6%  ·  P(never lose all year) = 0.6%
-- Expected cumulative point differential: +140.5 (deep tiebreaker only)
-- Implied plan: `W3:KC  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  W8:DAL`
+## ✅ Week 3 pick: **SF (San Francisco 49ers)**
+- Market win probability: **77.3%**  |  public 8.2%
+- **Expected weeks survived (of 18, 1 lives): 3.9**
+- P(reach season end still alive) = 0.5%  ·  P(never lose all year) = 0.5%
+- Expected cumulative point differential: +137.0 (deep tiebreaker only)
+- Implied plan: `W3:SF  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  W8:DAL`
 
 ## Optimal season plan (this pool)
 `W3:KC  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  W8:DAL  W9:SEA  W10:IND  W11:BUF  W12:JAX  W13:DEN  W14:DET  W15:GB+BAL  W16:BAL  W17:SF  W18:NE`
@@ -23,13 +23,13 @@
 ## Ranked options
 |   rank | team   |   win_% |   public_% |   E[wks] |   P(end)_% |   E[pt diff] | plan                                       |
 |-------:|:-------|--------:|-----------:|---------:|-----------:|-------------:|:-------------------------------------------|
-|      1 | KC     |    84.1 |       39.7 |     4.18 |        0.6 |        140.5 | W3:KC  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |
-|      2 | SF     |    77.3 |        8.2 |     3.92 |        0.5 |        137   | W3:SF  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |
-|      3 | BUF    |    74.6 |        7.4 |     3.8  |        0.5 |        133   | W3:BUF  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
+|      1 | SF     |    77.3 |        8.2 |     3.92 |        0.5 |        137   | W3:SF  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |
+|      2 | BUF    |    74.6 |        7.4 |     3.8  |        0.5 |        133   | W3:BUF  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
+|      3 | KC     |    84.1 |       39.7 |     4.18 |        0.6 |        140.5 | W3:KC  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |
 |      4 | SEA    |    73.3 |        8.9 |     3.74 |        0.5 |        133.5 | W3:SEA  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
 |      5 | DET    |    72.1 |        9   |     3.72 |        0.5 |        134   | W3:DET  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
-|      6 | GB     |    70.1 |       13.2 |     3.65 |        0.4 |        127.5 | W3:GB  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |
-|      7 | PHI    |    67.1 |        1.8 |     3.54 |        0.5 |        133.5 | W3:PHI  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
+|      6 | PHI    |    67.1 |        1.8 |     3.54 |        0.5 |        133.5 | W3:PHI  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
+|      7 | GB     |    70.1 |       13.2 |     3.65 |        0.4 |        127.5 | W3:GB  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |
 |      8 | CIN    |    63.5 |        1.7 |     3.4  |        0.4 |        131   | W3:CIN  W4:MIN  W5:NE  W6:LOSE LAC  W7:LA  |
 |      9 | BAL    |    62.9 |        0.2 |     3.38 |        0.4 |        132.5 | W3:BAL  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA |
 |     10 | NO     |    61.7 |        1.5 |     3.33 |        0.4 |        132   | W3:NO  W4:MIN  W5:CIN  W6:LOSE LAC  W7:LA  |

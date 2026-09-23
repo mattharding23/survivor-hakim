@@ -1,13 +1,13 @@
 {
   "week": 3,
-  "generated_at": "2026-09-23T13:53:46.050847+00:00",
+  "generated_at": "2026-09-23T14:04:09.045626+00:00",
   "mode": "consolation",
   "lives": 1,
   "lives_max": 1,
   "double_dip": "BAL",
   "realized_losses": 0,
   "n_participants": 70,
-  "n_alive": 0,
+  "n_alive": 70,
   "roster_source": "all_picks.csv",
   "used_counts": {
     "LAC": 1,
@@ -15,62 +15,19 @@
   },
   "teams": [
     {
-      "team": "KC",
-      "team_name": "Kansas City Chiefs",
-      "win_prob": 0.8411122144985105,
-      "pub_pick_pct": 0.397,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
-      "future_value": 0.2688658884317225,
-      "weeks_left": 4,
-      "exp_weeks": 4.180897985498292,
-      "p_survive": 0.005705422948598238,
-      "p_full_lives": 0.005705422948598238,
-      "exp_point_diff": 140.5,
-      "hakim_score": 4.200862442408377,
-      "implied_path": {
-        "1": "LAC",
-        "2": "TB",
-        "3": "KC",
-        "4": "MIN",
-        "5": "CIN",
-        "6": [
-          "LOSE",
-          "LAC"
-        ],
-        "7": "LA",
-        "8": "DAL",
-        "9": "SEA",
-        "10": "IND",
-        "11": "BUF",
-        "12": "JAX",
-        "13": "DEN",
-        "14": "DET",
-        "15": [
-          "GB",
-          "BAL"
-        ],
-        "16": "BAL",
-        "17": "SF",
-        "18": "NE"
-      },
-      "rank": 1,
-      "pick_score": 100.0
-    },
-    {
       "team": "SF",
       "team_name": "San Francisco 49ers",
       "win_prob": 0.773172033446006,
       "pub_pick_pct": 0.08199999999999999,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 5.741810758983778,
+      "exp_pool_share": 0.08202586798548255,
       "future_value": 0.18004217331889516,
       "weeks_left": 4,
       "exp_weeks": 3.9237908341394685,
       "p_survive": 0.005108761660334386,
       "p_full_lives": 0.005108761660334386,
       "exp_point_diff": 137.0,
-      "hakim_score": 3.94374850076209,
+      "hakim_score": 3.845317459179511,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -97,23 +54,23 @@
         "17": "PIT",
         "18": "NE"
       },
-      "rank": 2,
-      "pick_score": 90.1
+      "rank": 1,
+      "pick_score": 100.0
     },
     {
       "team": "BUF",
       "team_name": "Buffalo Bills",
       "win_prob": 0.7455834429134984,
       "pub_pick_pct": 0.07400000000000001,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 5.181634099570727,
+      "exp_pool_share": 0.07402334427958181,
       "future_value": 0.40877414798495054,
       "weeks_left": 7,
       "exp_weeks": 3.802236008919309,
       "p_survive": 0.004651095696551953,
       "p_full_lives": 0.004651095696551953,
       "exp_point_diff": 133.0,
-      "hakim_score": 3.8221843149282577,
+      "hakim_score": 3.7333563017927593,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -140,23 +97,66 @@
         "17": "SF",
         "18": "NE"
       },
+      "rank": 2,
+      "pick_score": 95.0
+    },
+    {
+      "team": "KC",
+      "team_name": "Kansas City Chiefs",
+      "win_prob": 0.8411122144985105,
+      "pub_pick_pct": 0.397,
+      "exp_pool_opponents": 27.79876672337268,
+      "exp_pool_share": 0.397125238905324,
+      "future_value": 0.2688658884317225,
+      "weeks_left": 4,
+      "exp_weeks": 4.180897985498292,
+      "p_survive": 0.005705422948598238,
+      "p_full_lives": 0.005705422948598238,
+      "exp_point_diff": 140.5,
+      "hakim_score": 3.7243121557219885,
+      "implied_path": {
+        "1": "LAC",
+        "2": "TB",
+        "3": "KC",
+        "4": "MIN",
+        "5": "CIN",
+        "6": [
+          "LOSE",
+          "LAC"
+        ],
+        "7": "LA",
+        "8": "DAL",
+        "9": "SEA",
+        "10": "IND",
+        "11": "BUF",
+        "12": "JAX",
+        "13": "DEN",
+        "14": "DET",
+        "15": [
+          "GB",
+          "BAL"
+        ],
+        "16": "BAL",
+        "17": "SF",
+        "18": "NE"
+      },
       "rank": 3,
-      "pick_score": 85.4
+      "pick_score": 94.6
     },
     {
       "team": "SEA",
       "team_name": "Seattle Seahawks",
       "win_prob": 0.7328244274809161,
       "pub_pick_pct": 0.08900000000000001,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 6.231965335970212,
+      "exp_pool_share": 0.08902807622814589,
       "future_value": 0.29887919684686054,
       "weeks_left": 6,
       "exp_weeks": 3.743539721526395,
       "p_survive": 0.004627321330293117,
       "p_full_lives": 0.004627321330293117,
       "exp_point_diff": 133.5,
-      "hakim_score": 3.7634893022557403,
+      "hakim_score": 3.656655610781965,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -184,22 +184,22 @@
         "18": "NE"
       },
       "rank": 4,
-      "pick_score": 83.1
+      "pick_score": 91.6
     },
     {
       "team": "DET",
       "team_name": "Detroit Lions",
       "win_prob": 0.7212543554006969,
       "pub_pick_pct": 0.09,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 6.3019874183968305,
+      "exp_pool_share": 0.0900283916913833,
       "future_value": 0.1899011027529362,
       "weeks_left": 4,
       "exp_weeks": 3.7245433079959036,
       "p_survive": 0.004630410938921203,
       "p_full_lives": 0.004630410938921203,
       "exp_point_diff": 134.0,
-      "hakim_score": 3.7444941320510523,
+      "hakim_score": 3.6364600620213925,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -227,65 +227,22 @@
         "18": "NE"
       },
       "rank": 5,
-      "pick_score": 82.4
-    },
-    {
-      "team": "GB",
-      "team_name": "Green Bay Packers",
-      "win_prob": 0.701468452477005,
-      "pub_pick_pct": 0.132,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
-      "future_value": 0.10175913362590341,
-      "weeks_left": 2,
-      "exp_weeks": 3.64617486068786,
-      "p_survive": 0.0036927958010475673,
-      "p_full_lives": 0.0036927958010475673,
-      "exp_point_diff": 127.5,
-      "hakim_score": 3.6661068317914025,
-      "implied_path": {
-        "1": "LAC",
-        "2": "TB",
-        "3": "GB",
-        "4": "MIN",
-        "5": "CIN",
-        "6": [
-          "LOSE",
-          "LAC"
-        ],
-        "7": "LA",
-        "8": "DAL",
-        "9": "SEA",
-        "10": "IND",
-        "11": "BUF",
-        "12": "JAX",
-        "13": "DEN",
-        "14": "DET",
-        "15": [
-          "BAL",
-          "NYG"
-        ],
-        "16": "BAL",
-        "17": "SF",
-        "18": "NE"
-      },
-      "rank": 6,
-      "pick_score": 79.4
+      "pick_score": 90.7
     },
     {
       "team": "PHI",
       "team_name": "Philadelphia Eagles",
       "win_prob": 0.6705271565495208,
       "pub_pick_pct": 0.018000000000000002,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 1.2603974836793679,
+      "exp_pool_share": 0.018005678338276685,
       "future_value": 0.14131960928862294,
       "weeks_left": 5,
       "exp_weeks": 3.5357835075096813,
       "p_survive": 0.004548312294949715,
       "p_full_lives": 0.004548312294949715,
       "exp_point_diff": 133.5,
-      "hakim_score": 3.555733088239027,
+      "hakim_score": 3.5341262742330946,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -312,23 +269,66 @@
         "17": "SF",
         "18": "NE"
       },
+      "rank": 6,
+      "pick_score": 86.1
+    },
+    {
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "win_prob": 0.701468452477005,
+      "pub_pick_pct": 0.132,
+      "exp_pool_opponents": 9.24291488031535,
+      "exp_pool_share": 0.13204164114736214,
+      "future_value": 0.10175913362590341,
+      "weeks_left": 2,
+      "exp_weeks": 3.64617486068786,
+      "p_survive": 0.0036927958010475673,
+      "p_full_lives": 0.0036927958010475673,
+      "exp_point_diff": 127.5,
+      "hakim_score": 3.507656862414568,
+      "implied_path": {
+        "1": "LAC",
+        "2": "TB",
+        "3": "GB",
+        "4": "MIN",
+        "5": "CIN",
+        "6": [
+          "LOSE",
+          "LAC"
+        ],
+        "7": "LA",
+        "8": "DAL",
+        "9": "SEA",
+        "10": "IND",
+        "11": "BUF",
+        "12": "JAX",
+        "13": "DEN",
+        "14": "DET",
+        "15": [
+          "BAL",
+          "NYG"
+        ],
+        "16": "BAL",
+        "17": "SF",
+        "18": "NE"
+      },
       "rank": 7,
-      "pick_score": 75.1
+      "pick_score": 84.9
     },
     {
       "team": "CIN",
       "team_name": "Cincinnati Bengals",
       "win_prob": 0.6345305608065531,
       "pub_pick_pct": 0.017,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 1.1903754012527354,
+      "exp_pool_share": 0.01700536287503908,
       "future_value": 0.21120786077372508,
       "weeks_left": 7,
       "exp_weeks": 3.39965244567286,
       "p_survive": 0.004115403494256106,
       "p_full_lives": 0.004115403494256106,
       "exp_point_diff": 131.0,
-      "hakim_score": 3.419595322741323,
+      "hakim_score": 3.399188887291276,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -356,22 +356,22 @@
         "18": "KC"
       },
       "rank": 8,
-      "pick_score": 69.9
+      "pick_score": 80.1
     },
     {
       "team": "BAL",
       "team_name": "Baltimore Ravens",
       "win_prob": 0.6288337565930846,
       "pub_pick_pct": 0.002,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.13403214080516693,
+      "exp_pool_share": 0.0019147448686452418,
       "future_value": 0.4537735222610245,
       "weeks_left": 8,
       "exp_weeks": 3.378108408225723,
       "p_survive": 0.004265498091545996,
       "p_full_lives": 0.004265498091545996,
       "exp_point_diff": 132.5,
-      "hakim_score": 3.3980554073290348,
+      "hakim_score": 3.3957577134866606,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -399,22 +399,22 @@
         "18": "NE"
       },
       "rank": 9,
-      "pick_score": 69.1
+      "pick_score": 79.9
     },
     {
       "team": "NO",
       "team_name": "New Orleans Saints",
       "win_prob": 0.6168582375478927,
       "pub_pick_pct": 0.015,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 1.0503312363994728,
+      "exp_pool_share": 0.015004731948563896,
       "future_value": 0.01973097579956145,
       "weeks_left": 3,
       "exp_weeks": 3.332819677721602,
       "p_survive": 0.00418426588494613,
       "p_full_lives": 0.00418426588494613,
       "exp_point_diff": 132.0,
-      "hakim_score": 3.352765336923585,
+      "hakim_score": 3.334759658585308,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -442,22 +442,22 @@
         "18": "NE"
       },
       "rank": 10,
-      "pick_score": 67.3
+      "pick_score": 77.2
     },
     {
       "team": "CAR",
       "team_name": "Carolina Panthers",
       "win_prob": 0.5815341524816192,
       "pub_pick_pct": 0.039,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 2.7308612146386295,
+      "exp_pool_share": 0.03901230306626614,
       "future_value": 0.0,
       "weeks_left": 0,
       "exp_weeks": 3.3121131530823433,
       "p_survive": 0.004515648357471195,
       "p_full_lives": 0.004515648357471195,
       "exp_point_diff": 129.0,
-      "hakim_score": 3.3320500319599273,
+      "hakim_score": 3.285235268280408,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -485,22 +485,22 @@
         "18": "NE"
       },
       "rank": 11,
-      "pick_score": 66.5
+      "pick_score": 75.0
     },
     {
       "team": "JAX",
       "team_name": "Jacksonville Jaguars",
       "win_prob": 0.5930856097407103,
       "pub_pick_pct": 0.002,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.14004416485326313,
+      "exp_pool_share": 0.0020006309264751876,
       "future_value": 0.051667005845014574,
       "weeks_left": 2,
       "exp_weeks": 3.2361775824021723,
       "p_survive": 0.0036246423981602994,
       "p_full_lives": 0.0036246423981602994,
       "exp_point_diff": 129.0,
-      "hakim_score": 3.2561144612797563,
+      "hakim_score": 3.253713704167986,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -528,22 +528,22 @@
         "18": "KC"
       },
       "rank": 12,
-      "pick_score": 63.6
+      "pick_score": 73.6
     },
     {
       "team": "HOU",
       "team_name": "Houston Texans",
       "win_prob": 0.5798319327731092,
       "pub_pick_pct": 0.004,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.27606013232485455,
+      "exp_pool_share": 0.003943716176069351,
       "future_value": 0.10900685121786308,
       "weeks_left": 4,
       "exp_weeks": 3.1927944869820095,
       "p_survive": 0.003933109469283097,
       "p_full_lives": 0.003933109469283097,
       "exp_point_diff": 131.5,
-      "hakim_score": 3.2127387724562246,
+      "hakim_score": 3.208006313044941,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -571,22 +571,22 @@
         "18": "NE"
       },
       "rank": 13,
-      "pick_score": 61.9
+      "pick_score": 71.5
     },
     {
       "team": "NYG",
       "team_name": "New York Giants",
       "win_prob": 0.5711159737417943,
       "pub_pick_pct": 0.019,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 1.3304195661059977,
+      "exp_pool_share": 0.019005993801514253,
       "future_value": 0.0,
       "weeks_left": 0,
       "exp_weeks": 3.1598326823066087,
       "p_survive": 0.0038739874736455062,
       "p_full_lives": 0.0038739874736455062,
       "exp_point_diff": 132.0,
-      "hakim_score": 3.1797783415085914,
+      "hakim_score": 3.1569711489467744,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -614,22 +614,22 @@
         "18": "NE"
       },
       "rank": 14,
-      "pick_score": 60.7
+      "pick_score": 69.3
     },
     {
       "team": "LA",
       "team_name": "Los Angeles Rams",
       "win_prob": 0.5711159737417943,
       "pub_pick_pct": 0.002,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.13803814679910062,
+      "exp_pool_share": 0.0019719735257014374,
       "future_value": 0.4472293953277271,
       "weeks_left": 8,
       "exp_weeks": 3.064821057164076,
       "p_survive": 0.003594624038824005,
       "p_full_lives": 0.003594624038824005,
       "exp_point_diff": 121.5,
-      "hakim_score": 3.0847292823661947,
+      "hakim_score": 3.082362914135353,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -657,22 +657,22 @@
         "18": "NE"
       },
       "rank": 15,
-      "pick_score": 57.0
+      "pick_score": 65.9
     },
     {
       "team": "MIN",
       "team_name": "Minnesota Vikings",
       "win_prob": 0.5217391304347826,
       "pub_pick_pct": 0.006999999999999999,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.49015457698642084,
+      "exp_pool_share": 0.0070022082426631545,
       "future_value": 0.21471460599286785,
       "weeks_left": 2,
       "exp_weeks": 2.883547297788251,
       "p_survive": 0.0034380212901434226,
       "p_full_lives": 0.0034380212901434226,
       "exp_point_diff": 122.5,
-      "hakim_score": 2.9034599891304373,
+      "hakim_score": 2.8950573392392416,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -700,22 +700,22 @@
         "18": "NE"
       },
       "rank": 16,
-      "pick_score": 50.0
+      "pick_score": 57.6
     },
     {
       "team": "CLE",
       "team_name": "Cleveland Browns",
       "win_prob": 0.41846584751838084,
       "pub_pick_pct": 0.001,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.07002208242663156,
+      "exp_pool_share": 0.0010003154632375938,
       "future_value": 0.0,
       "weeks_left": 0,
       "exp_weeks": 2.7136966153808513,
       "p_survive": 0.003501947631446484,
       "p_full_lives": 0.003501947631446484,
       "exp_point_diff": 121.0,
-      "hakim_score": 2.7336025227580123,
+      "hakim_score": 2.732402144202127,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -743,22 +743,22 @@
         "18": "NE"
       },
       "rank": 17,
-      "pick_score": 43.5
+      "pick_score": 50.3
     },
     {
       "team": "TEN",
       "team_name": "Tennessee Titans",
       "win_prob": 0.42888402625820565,
       "pub_pick_pct": 0.003,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.20403607216239716,
+      "exp_pool_share": 0.0029148010308913883,
       "future_value": 0.0,
       "weeks_left": 0,
       "exp_weeks": 2.678182641009836,
       "p_survive": 0.0031936792703224945,
       "p_full_lives": 0.0031936792703224945,
       "exp_point_diff": 124.0,
-      "hakim_score": 2.698101628194274,
+      "hakim_score": 2.694603866957204,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -786,7 +786,7 @@
         "18": "NE"
       },
       "rank": 18,
-      "pick_score": 42.1
+      "pick_score": 48.6
     },
     {
       "team": "DEN",
@@ -829,22 +829,22 @@
         "18": "NE"
       },
       "rank": 19,
-      "pick_score": 39.7
+      "pick_score": 46.0
     },
     {
       "team": "LV",
       "team_name": "Las Vegas Raiders",
       "win_prob": 0.38314176245210724,
       "pub_pick_pct": 0.002,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.14004416485326313,
+      "exp_pool_share": 0.0020006309264751876,
       "future_value": 0.0,
       "weeks_left": 0,
       "exp_weeks": 2.546641595763985,
       "p_survive": 0.003093048807445639,
       "p_full_lives": 0.003093048807445639,
       "exp_point_diff": 122.0,
-      "hakim_score": 2.5665520818231338,
+      "hakim_score": 2.5641513247113634,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -872,22 +872,22 @@
         "18": "NE"
       },
       "rank": 20,
-      "pick_score": 37.0
+      "pick_score": 42.8
     },
     {
       "team": "IND",
       "team_name": "Indianapolis Colts",
       "win_prob": 0.42016806722689076,
       "pub_pick_pct": 0.002,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.14004416485326313,
+      "exp_pool_share": 0.0020006309264751876,
       "future_value": 0.10434004262556645,
       "weeks_left": 3,
       "exp_weeks": 2.5369844679293356,
       "p_survive": 0.0026445526026957888,
       "p_full_lives": 0.0026445526026957888,
       "exp_point_diff": 116.5,
-      "hakim_score": 2.556866703498541,
+      "hakim_score": 2.5544659463867707,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -915,22 +915,22 @@
         "18": "NE"
       },
       "rank": 21,
-      "pick_score": 36.7
+      "pick_score": 42.4
     },
     {
       "team": "NE",
       "team_name": "New England Patriots",
       "win_prob": 0.4069143902592896,
       "pub_pick_pct": 0.001,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.07002208242663156,
+      "exp_pool_share": 0.0010003154632375938,
       "future_value": 0.2351756883657984,
       "weeks_left": 4,
       "exp_weeks": 2.500226922417422,
       "p_survive": 0.002639143024738736,
       "p_full_lives": 0.002639143024738736,
       "exp_point_diff": 116.5,
-      "hakim_score": 2.5201091579866275,
+      "hakim_score": 2.5189087794307423,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -958,22 +958,22 @@
         "18": "KC"
       },
       "rank": 22,
-      "pick_score": 35.2
+      "pick_score": 40.8
     },
     {
       "team": "DAL",
       "team_name": "Dallas Cowboys",
       "win_prob": 0.37116624340691545,
       "pub_pick_pct": 0.001,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.06701907942362856,
+      "exp_pool_share": 0.0009574154203375509,
       "future_value": 0.11491075774333138,
       "weeks_left": 3,
       "exp_weeks": 2.3940247576033618,
       "p_survive": 0.0023222341223660464,
       "p_full_lives": 0.0023222341223660464,
       "exp_point_diff": 123.0,
-      "hakim_score": 2.4139396000147233,
+      "hakim_score": 2.412790701510318,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -1001,7 +1001,7 @@
         "18": "KC"
       },
       "rank": 23,
-      "pick_score": 31.1
+      "pick_score": 36.0
     },
     {
       "team": "PIT",
@@ -1044,7 +1044,7 @@
         "18": "NE"
       },
       "rank": 24,
-      "pick_score": 30.7
+      "pick_score": 35.6
     },
     {
       "team": "CHI",
@@ -1087,22 +1087,22 @@
         "18": "NE"
       },
       "rank": 25,
-      "pick_score": 24.2
+      "pick_score": 28.1
     },
     {
       "team": "ATL",
       "team_name": "Atlanta Falcons",
       "win_prob": 0.298531547522995,
       "pub_pick_pct": 0.001,
-      "exp_pool_opponents": 0.0,
-      "exp_pool_share": 0.0,
+      "exp_pool_opponents": 0.06901907339955031,
+      "exp_pool_share": 0.0009859867628507187,
       "future_value": 0.0,
       "weeks_left": 0,
       "exp_weeks": 2.1289794414527123,
       "p_survive": 0.0020249958480673767,
       "p_full_lives": 0.0020249958480673767,
       "exp_point_diff": 123.5,
-      "hakim_score": 2.148896382046518,
+      "hakim_score": 2.1477131979310973,
       "implied_path": {
         "1": "LAC",
         "2": "TB",
@@ -1130,7 +1130,7 @@
         "18": "NE"
       },
       "rank": 26,
-      "pick_score": 20.9
+      "pick_score": 24.2
     },
     {
       "team": "NYJ",
@@ -1173,7 +1173,7 @@
         "18": "NE"
       },
       "rank": 27,
-      "pick_score": 20.8
+      "pick_score": 24.1
     },
     {
       "team": "WAS",
@@ -1216,7 +1216,7 @@
         "18": "NE"
       },
       "rank": 28,
-      "pick_score": 18.7
+      "pick_score": 21.6
     },
     {
       "team": "ARI",
@@ -1259,7 +1259,7 @@
         "18": "NE"
       },
       "rank": 29,
-      "pick_score": 15.6
+      "pick_score": 18.1
     },
     {
       "team": "MIA",
@@ -1306,23 +1306,23 @@
     }
   ],
   "recommendation": {
-    "team": "KC",
-    "team_name": "Kansas City Chiefs",
-    "win_prob": 0.8411122144985105,
-    "pub_pick_pct": 0.397,
-    "exp_pool_opponents": 0.0,
-    "exp_pool_share": 0.0,
-    "future_value": 0.2688658884317225,
+    "team": "SF",
+    "team_name": "San Francisco 49ers",
+    "win_prob": 0.773172033446006,
+    "pub_pick_pct": 0.08199999999999999,
+    "exp_pool_opponents": 5.741810758983778,
+    "exp_pool_share": 0.08202586798548255,
+    "future_value": 0.18004217331889516,
     "weeks_left": 4,
-    "exp_weeks": 4.180897985498292,
-    "p_survive": 0.005705422948598238,
-    "p_full_lives": 0.005705422948598238,
-    "exp_point_diff": 140.5,
-    "hakim_score": 4.200862442408377,
+    "exp_weeks": 3.9237908341394685,
+    "p_survive": 0.005108761660334386,
+    "p_full_lives": 0.005108761660334386,
+    "exp_point_diff": 137.0,
+    "hakim_score": 3.845317459179511,
     "implied_path": {
       "1": "LAC",
       "2": "TB",
-      "3": "KC",
+      "3": "SF",
       "4": "MIN",
       "5": "CIN",
       "6": [
@@ -1342,7 +1342,7 @@
         "BAL"
       ],
       "16": "BAL",
-      "17": "SF",
+      "17": "PIT",
       "18": "NE"
     },
     "rank": 1,
