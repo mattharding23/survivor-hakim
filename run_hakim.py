@@ -44,6 +44,9 @@ def main() -> int:
                     help="override current life count (auto-detected from realized "
                          "results of your logged picks otherwise; set after a buy-back)")
     ap.add_argument("--double-dip", default=None, help="your Double-Dip team abbr")
+    ap.add_argument("--entry-week", type=int, default=None,
+                    help="first week you pick in this pool (default: from "
+                         "data/2026/hakim/entry_week.csv, or Week 1)")
     ap.add_argument("--recommend-double-dip", action="store_true",
                     help="rank eligible teams as Double-Dip nominees")
     ap.add_argument("--refresh", action="store_true")
@@ -54,7 +57,7 @@ def main() -> int:
         ap.error("--week must be 1..18")
     res = run(week, mode=args.mode, double_dip=args.double_dip,
               recommend_dd=args.recommend_double_dip, force_refresh=args.refresh, cfg=cfg,
-              lives=args.lives)
+              lives=args.lives, entry_week=args.entry_week)
     print("\n" + res["report"]["markdown"])
     print(f"\nWritten to: {res['report']['dir']}")
     return 0

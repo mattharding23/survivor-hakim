@@ -38,10 +38,11 @@ def _fmt_plan(path: dict, w0: int, n: int = 6) -> str:
 
 def run(current_week: int, mode: str = "main", double_dip: str | None = None,
         recommend_dd: bool = False, force_refresh: bool = False,
-        cfg: Config | None = None, lives: int | None = None) -> dict:
+        cfg: Config | None = None, lives: int | None = None,
+        entry_week: int | None = None) -> dict:
     cfg = cfg or Config()
     cfg.current_week = current_week
-    hcfg = HakimConfig(mode=mode, double_dip=double_dip, lives=lives)
+    hcfg = HakimConfig(mode=mode, double_dip=double_dip, lives=lives, entry_week=entry_week)
 
     schedule = load_season_schedule(cfg.season, force=force_refresh)
     history = load_history(cfg.season, cfg.elo.lookback_seasons, force=force_refresh)
@@ -59,6 +60,7 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
     inp = load_hakim_inputs(cfg, hcfg)
     my_picks, dd = inp["my_picks"], inp["double_dip"]
     hcfg.double_dip = dd
+    hcfg.entry_week = inp["entry_week"]
     used0 = used_counts_from_picks(my_picks)
     roster = inp["roster"]
 
@@ -67,11 +69,12 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
     # otherwise always assumes you're walking in at full health.
     realized_losses = 0
     if hcfg.lives is None:
-        realized_losses = realized_life_losses(my_picks, wp, current_week)
+        realized_losses = realized_life_losses(my_picks, wp, current_week, entry_week=hcfg.entry_week)
         if realized_losses:
             base_lives = hcfg.lives_for_mode()
             hcfg.lives = max(base_lives - realized_losses, 0)
-            print(f"[hakim] {realized_losses} of your logged pick(s) before Week {current_week} "
+            since = f" since entering it in Week {hcfg.entry_week}" if hcfg.entry_week > 1 else ""
+            print(f"[hakim] {realized_losses} of your logged pick(s){since} before Week {current_week} "
                  f"lost -- modelling {hcfg.lives} life/lives remaining (was {base_lives}). "
                  f"Pass --lives to override.")
             if hcfg.lives == 0 and mode == "main":

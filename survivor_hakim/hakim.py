@@ -48,7 +48,11 @@ WP_LO, WP_HI = 0.02, 0.995
 class HakimConfig:
     mode: str = "main"                 # "main" (2 lives) or "consolation" (1 life)
     lives: int | None = None           # override; default 2 main / 1 consolation
-    entry_week: int = 1                # first week you pick (consolation entrants: later)
+    entry_week: int | None = None      # first week you pick in THIS pool (consolation
+                                        # entrants: the week after the loss that dropped
+                                        # them there -- losses before it already spent
+                                        # the life that got them here, and don't also
+                                        # cost their fresh life in this pool)
     double_dip: str | None = None      # team abbr usable twice
     engine: EngineConfig = field(default_factory=EngineConfig)
     beam_width: int = 320
@@ -156,6 +160,22 @@ def load_hakim_inputs(cfg: Config, hcfg: HakimConfig) -> dict:
                 dd = to_abbr(line)
                 break
 
+    # entry_week.csv : single line, the first week you pick in the CURRENT pool
+    # (only meaningful for mode=="consolation" -- the week after the loss that
+    # dropped you there).
+    ew_f = d / "entry_week.csv"
+    if not ew_f.exists():
+        ew_f.write_text("week\n# first week you pick in this pool -- consolation "
+                        "entrants: the week after the loss that dropped you there\n")
+    entry_week = hcfg.entry_week
+    if entry_week is None:
+        entry_week = 1
+        for line in ew_f.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith(("#", "week")):
+                entry_week = int(line)
+                break
+
     # participants.csv : participant,week,team[,role] — hand-maintained fallback,
     # only consulted when all_picks.csv (the real scohak export) isn't present.
     part_f = d / "participants.csv"
@@ -170,7 +190,7 @@ def load_hakim_inputs(cfg: Config, hcfg: HakimConfig) -> dict:
         roster = Roster.load(part_f)
         roster_source = "participants.csv (manual)"
 
-    return dict(my_picks=my_picks, double_dip=dd, participants_file=part_f,
+    return dict(my_picks=my_picks, double_dip=dd, entry_week=entry_week, participants_file=part_f,
                roster=roster, roster_source=roster_source)
 
 
@@ -195,14 +215,20 @@ def weeks_1_5_win_picks(my_picks: list[dict]) -> list[str]:
     return [p["team"] for p in my_picks if p["role"] == "win" and 1 <= p["week"] <= 5]
 
 
-def realized_life_losses(my_picks: list[dict], wp: pd.DataFrame, before_week: int) -> int:
-    """How many of your already-played 'win'-role picks (week < before_week)
-    actually lost, per the win-prob matrix (which holds 1.0/0.0 for decided
-    games, sourced from real results). Loser's Week picks that *won* also cost
-    a life; role=='loser' + win_prob near 1 counts as a loss here too."""
+def realized_life_losses(my_picks: list[dict], wp: pd.DataFrame, before_week: int,
+                         entry_week: int = 1) -> int:
+    """How many of your already-played 'win'-role picks (entry_week <= week <
+    before_week) actually lost, per the win-prob matrix (which holds 1.0/0.0
+    for decided games, sourced from real results). Loser's Week picks that
+    *won* also cost a life; role=='loser' + win_prob near 1 counts as a loss
+    here too.
+
+    Picks before entry_week are excluded: for a Consolation entrant, those
+    are the Main-pool losses that got them here -- already priced into the
+    drop, not a further hit against their fresh Consolation life."""
     losses = 0
     for p in my_picks:
-        if p["week"] >= before_week:
+        if p["week"] >= before_week or p["week"] < entry_week:
             continue
         if p["team"] not in wp.index or p["week"] not in wp.columns:
             continue
