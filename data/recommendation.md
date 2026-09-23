@@ -1,63 +1,62 @@
-# Hakim League — Week 2 (2026) — Main Pool
+# Hakim League — Week 3 (2026) — Consolation Pool
 
-- Lives model: **1 remaining** — 1 realized loss(es) already deducted (out on next loss)
+- Lives model: **0 remaining** — 2 realized loss(es) already deducted (single elimination)
 - Double-Dip team: **BAL** (usable 2×; 3× if also the Wk6 loser)
 - Win-prob sources: odds-api:32
 - Public pick %: survivorgrid
-- Opponent roster: all_picks.csv (305 entrants, 305 alive)
-- Teams used: LAC×1
+- Opponent roster: all_picks.csv (70 entrants, 0 alive)
+- Teams used: LAC×1, TB×1
 
-## ✅ Week 2 pick: **SF (San Francisco 49ers)**
-- Market win probability: **87.8%**  |  public 29.4%
-- **Expected weeks survived (of 18, 1 lives): 4.4**
-- P(reach season end still alive) = 0.4%  ·  P(never lose all year) = 0.4%
-- Expected cumulative point differential: +148.5 (deep tiebreaker only)
-- Implied plan: `W2:SF  W3:KC  W4:CHI  W5:NE  W6:LOSE LAC  W7:DEN`
+## ✅ Week 3 pick: **KC (Kansas City Chiefs)**
+- Market win probability: **84.1%**  |  public 39.7%
+- **Expected weeks survived (of 18, 0 lives): 0.0**
+- P(reach season end still alive) = 0.0%  ·  P(never lose all year) = 84.1%
+- Expected cumulative point differential: +11.5 (deep tiebreaker only)
+- Implied plan: `W3:KC`
 
 ## Optimal season plan (this pool)
-`W2:SF  W3:KC  W4:CHI  W5:NE  W6:LOSE LAC  W7:DEN  W8:DAL  W9:SEA  W10:LA  W11:BUF  W12:CIN  W13:PHI  W14:DET  W15:GB+NYG  W16:BAL  W17:JAX  W18:HOU`
-- E[weeks survived] = **4.4** / 18  ·  P(reach end alive) = 0.4%  ·  P(never lose) = 0.4%  ·  E[pt diff] = +148.5
-- Double-Dip **BAL** used in weeks: [16]
-- **Loser's Week (6) setup:** best team-to-lose from this plan is **KC** (Wk 3 pick, ~42% to lose in Wk 6); backup CHI (~41%).
+``
+- E[weeks survived] = **0.0** / 18  ·  P(reach end alive) = 0.0%  ·  P(never lose) = 100.0%  ·  E[pt diff] = +0.0
+- Double-Dip **BAL** used in weeks: (held in reserve)
+- ⚠️ **Loser's Week (6):** this plan's Weeks 1-5 picks are all favourites in Week 6 — you'd likely eat a loss there. Consider banking a Week-6 underdog in one of your first 5 picks.
 
 ## Ranked options
-|   rank | team   |   win_% |   public_% |   E[wks] |   P(end)_% |   E[pt diff] | plan                                       |
-|-------:|:-------|--------:|-----------:|---------:|-----------:|-------------:|:-------------------------------------------|
-|      1 | SF     |    87.8 |       29.4 |     4.37 |        0.4 |        148.5 | W2:SF  W3:KC  W4:CHI  W5:NE  W6:LOSE LAC   |
-|      2 | BAL    |    77.3 |        7.1 |     3.99 |        0.4 |        145.5 | W2:BAL  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|      3 | LA     |    73.8 |        1.3 |     3.83 |        0.3 |        140.5 | W2:LA  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC   |
-|      4 | KC     |    71.5 |        2.8 |     3.76 |        0.3 |        142   | W2:KC  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC   |
-|      5 | PHI    |    74.3 |       12.3 |     3.86 |        0.3 |        139   | W2:PHI  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|      6 | BUF    |    68.2 |        1.5 |     3.64 |        0.3 |        140.5 | W2:BUF  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|      7 | TB     |    77.1 |       29.5 |     3.98 |        0.4 |        145.5 | W2:TB  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC   |
-|      8 | NE     |    67.9 |        1   |     3.57 |        0.3 |        128   | W2:NE  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ  |
-|      9 | DAL    |    65.1 |        1.1 |     3.49 |        0.3 |        135.5 | W2:DAL  W3:SF  W4:CHI  W5:DET  W6:LOSE DAL |
-|     10 | CHI    |    66.1 |        1.5 |     3.48 |        0.3 |        129   | W2:CHI  W3:SF  W4:BAL  W5:NYJ  W6:LOSE NYJ |
-|     11 | SEA    |    64.6 |        1.5 |     3.47 |        0.3 |        136   | W2:SEA  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|     12 | CAR    |    57.1 |        2.7 |     3.32 |        0.3 |        135.5 | W2:CAR  W3:SF  W4:CHI  W5:NE  W6:LOSE CAR  |
-|     13 | GB     |    61.5 |        3.6 |     3.32 |        0.3 |        122   | W2:GB  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ  |
-|     14 | DEN    |    58.7 |        0.2 |     3.26 |        0.3 |        136.5 | W2:DEN  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|     15 | HOU    |    58   |        0.4 |     3.24 |        0.3 |        139.5 | W2:HOU  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|     16 | ATL    |    42.9 |        0.2 |     2.67 |        0.2 |        134   | W2:ATL  W3:SF  W4:CHI  W5:NE  W6:LOSE ATL  |
-|     17 | NYJ    |    38.5 |        0.1 |     2.63 |        0.3 |        126   | W2:NYJ  W3:SF  W4:CHI  W5:NE  W6:LOSE NYJ  |
-|     18 | JAX    |    41.3 |        0.2 |     2.6  |        0.2 |        134   | W2:JAX  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|     19 | CIN    |    42   |        0.2 |     2.59 |        0.2 |        121   | W2:CIN  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ |
-|     20 | ARI    |    35.4 |        0.1 |     2.55 |        0.3 |        121.5 | W2:ARI  W3:SF  W4:CHI  W5:NE  W6:LOSE ARI  |
-|     21 | WAS    |    34.9 |        0.1 |     2.41 |        0.2 |        130   | W2:WAS  W3:SF  W4:CHI  W5:NE  W6:LOSE WAS  |
-|     22 | MIN    |    33.9 |        0.1 |     2.28 |        0.2 |        120.5 | W2:MIN  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ |
-|     23 | PIT    |    32.1 |        0.1 |     2.24 |        0.2 |        132   | W2:PIT  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC  |
-|     24 | DET    |    31.8 |        0.1 |     2.2  |        0.2 |        118   | W2:DET  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ |
-|     25 | LV     |    28.2 |        0.1 |     2.15 |        0.2 |        126   | W2:LV  W3:SF  W4:CHI  W5:NE  W6:LOSE LV    |
-|     26 | IND    |    28.5 |        0   |     2.08 |        0.2 |        118.5 | W2:IND  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ |
-|     27 | TEN    |    25.7 |        0   |     2.01 |        0.1 |        129   | W2:TEN  W3:SF  W4:CHI  W5:NE  W6:LOSE TEN  |
-|     28 | NYG    |    26.2 |        0.1 |     1.99 |        0.1 |        117.5 | W2:NYG  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ |
-|     29 | CLE    |    22.9 |        0   |     1.94 |        0.1 |        124   | W2:CLE  W3:SF  W4:CHI  W5:NE  W6:LOSE CLE  |
-|     30 | NO     |    22.7 |        0   |     1.88 |        0.1 |        128.5 | W2:NO  W3:SF  W4:CHI  W5:NE  W6:LOSE LAC   |
-|     31 | MIA    |    12.2 |        0   |     1.46 |        0.1 |        112   | W2:MIA  W3:SF  W4:CHI  W5:NYJ  W6:LOSE NYJ |
+|   rank | team   |   win_% |   public_% |   E[wks] |   P(end)_% |   E[pt diff] | plan   |
+|-------:|:-------|--------:|-----------:|---------:|-----------:|-------------:|:-------|
+|      1 | KC     |    84.1 |       39.7 |        0 |          0 |         11.5 | W3:KC  |
+|      2 | SF     |    77.3 |        8.2 |        0 |          0 |          8.5 | W3:SF  |
+|      3 | BUF    |    74.6 |        7.4 |        0 |          0 |          7.5 | W3:BUF |
+|      4 | SEA    |    73.3 |        8.9 |        0 |          0 |          7   | W3:SEA |
+|      5 | DET    |    72.1 |        9   |        0 |          0 |          6.5 | W3:DET |
+|      6 | GB     |    70.1 |       13.2 |        0 |          0 |          5.5 | W3:GB  |
+|      7 | PHI    |    67.1 |        1.8 |        0 |          0 |          4.5 | W3:PHI |
+|      8 | CIN    |    63.5 |        1.7 |        0 |          0 |          3.5 | W3:CIN |
+|      9 | BAL    |    62.9 |        0.2 |        0 |          0 |          3.5 | W3:BAL |
+|     10 | NYG    |    57.1 |        1.9 |        0 |          0 |          3   | W3:NYG |
+|     11 | JAX    |    59.3 |        0.2 |        0 |          0 |          3   | W3:JAX |
+|     12 | NO     |    61.7 |        1.5 |        0 |          0 |          3   | W3:NO  |
+|     13 | CAR    |    58.2 |        3.9 |        0 |          0 |          3   | W3:CAR |
+|     14 | HOU    |    58   |        0.4 |        0 |          0 |          2.5 | W3:HOU |
+|     15 | LA     |    57.1 |        0.2 |        0 |          0 |          2.5 | W3:LA  |
+|     16 | MIN    |    52.2 |        0.7 |        0 |          0 |          1.5 | W3:MIN |
+|     17 | DEN    |    42.9 |        0   |        0 |          0 |         -2.5 | W3:DEN |
+|     18 | IND    |    42   |        0.2 |        0 |          0 |         -2.5 | W3:IND |
+|     19 | CLE    |    41.8 |        0.1 |        0 |          0 |         -3   | W3:CLE |
+|     20 | TEN    |    42.9 |        0.3 |        0 |          0 |         -3   | W3:TEN |
+|     21 | LV     |    38.3 |        0.2 |        0 |          0 |         -3   | W3:LV  |
+|     22 | NE     |    40.7 |        0.1 |        0 |          0 |         -3   | W3:NE  |
+|     23 | PIT    |    36.5 |        0   |        0 |          0 |         -3.5 | W3:PIT |
+|     24 | DAL    |    37.1 |        0.1 |        0 |          0 |         -3.5 | W3:DAL |
+|     25 | CHI    |    32.9 |        0   |        0 |          0 |         -4.5 | W3:CHI |
+|     26 | ATL    |    29.9 |        0.1 |        0 |          0 |         -5.5 | W3:ATL |
+|     27 | NYJ    |    27.9 |        0   |        0 |          0 |         -6.5 | W3:NYJ |
+|     28 | WAS    |    26.7 |        0   |        0 |          0 |         -7   | W3:WAS |
+|     29 | ARI    |    22.7 |        0   |        0 |          0 |         -8.5 | W3:ARI |
+|     30 | MIA    |    15.9 |        0   |        0 |          0 |        -11.5 | W3:MIA |
 
 ## Charts
-- `week_02_hakim_win_probability.png`
-- `week_02_hakim_pick_distribution.png`
-- `week_02_hakim_best_picks.png`
-- `week_02_hakim_teams_remaining.png`
-- `week_02_hakim_ranked_table.png`
+- `week_03_hakim_win_probability.png`
+- `week_03_hakim_pick_distribution.png`
+- `week_03_hakim_best_picks.png`
+- `week_03_hakim_teams_remaining.png`
+- `week_03_hakim_ranked_table.png`
