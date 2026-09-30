@@ -1,72 +1,67 @@
-﻿Entry,Wk 1,Wk 2,Wk 3
-1. Sean Hakim 💵💵,✗LAC,✗TB,—
-1. Brian Langford 💵,✗LAC,✗TB,—
-1. Corey Flayman,✗LAC,✗TB,—
-4. Joey LoGiurato,✗LAC,✗—,—
-5. David Hooten 💵,✗LAC,✗TB,—
-6. Drew Lavine 🏆 💵,✗LAC,✗—,—
-7. Juan Brando 💰,✗LAC,✗TB,—
-8. Nicole Jakubik,✗TEN,✗HOU,—
-9. Pedram Bahramipanah 🥈,✗LAC,✗—,—
-10. Storm0802,✗LAC,✗TB,—
-11. Cain Martin,✗DAL,✗TB,—
-12. Shawn Newlan,✗LAC,✗—,—
-13. Brady Shepherd 💲,✗LAC,✗TB,—
-13. Nicole Haines,✗LAC,✗TB,—
-15. kevin.hagenlocher,✗LAC,✗—,—
-16. Henry Peabody,✗DAL,✗TB,—
-17. Phil Kluever,✗LAC,✗TB,—
-17. Mia Kane-Hester,✗LAC,✗TB,—
-19. Joe Parkhill 💵,✗LAC,✗—,—
-20. Bret Keyes 💵 💰,✗DAL,✗TB,—
-21. Carlos Galindo,✗LAC,✗TB,—
-22. Matthew Nykolyn 💵,✗LAC,✗—,—
-22. Jason Baldridge,✗LAC,✗—,—
-24. Kody Alber,✗LAC,✗TB,—
-25. Ashwin Iyer,✗LAC,✗—,—
-26. Jake Knouse,✗LAC,✗TB,—
-26. Thomas LaPorte 4,✗LAC,✗TB,—
-26. Kelly Krichten,✗LAC,✗TB,—
-26. Mark Guntle 🏆 💵,✗LAC,✗TB,—
-30. Ted Skarvelis,✗—,✗—,—
-31. Aileen Pollitzer,✗LAC,✗TB,—
-32. Blake Jones,✗LAC,✗—,—
-33. RodrigoEspinosa 💰,✗TEN,✗ARI,—
-34. Josh Dossick,✗LAC,✗TB,—
-34. Chris Palantino,✗LAC,✗TB,—
-34. David Lewis,✗LAC,✗TB,—
-34. Esteban Solano,✗LAC,✗TB,—
-38. klaskalki 2,✗MIA,✗LAC,—
-39. Matt HardingYou,✗LAC,✗TB,—
-40. Charles Girnius,✗LAC,✗BAL,—
-41. Quinton Verchick,✗—,✗TB,—
-42. Mukund Chillakanti,✗LAC,✗—,—
-42. Jacob Morrison,✗LAC,✗—,—
-44. John Michael Kearney,✗LAR,✗ATL,—
-45. Andy Ossman,✗LAC,✗—,—
-46. Brian Savage,✗LAC,✗TB,—
-46. Elena Bonilla,✗LAC,✗TB,—
-46. Grace John,✗LAC,✗TB,—
-49. Chris Gibson,✗LAC,✗BAL,—
-49. Walt Maruschak,✗LAC,✗BAL,—
-51. Zak Glaser 💵,✗LAC,✗—,—
-51. Sara Justus,✗—,✗LAC,—
-53. Douglas Wyatt,✗LAC,✗TB,—
-53. Nandu Radhakrishnan,✗LAC,✗TB,—
-53. nik erramilli,✗LAC,✗TB,—
-56. Lucas Hadersbeck 🥈,✗LAC,✗—,—
-56. Chelsea Phillips,✗LAC,✗—,—
-56. Rohan Hebbar,✗LAC,✗—,—
-56. Matt Goldberg,✗LAC,✗—,—
-56. Derron Morris,✗LAC,✗—,—
-61. Alex Benanti,✗LAC,✗TB,—
-61. Tyler Mills,✗LAC,✗TB,—
-61. Rory O'Connor,✗LAC,✗TB,—
-61. Kyle Smith,✗LAC,✗TB,—
-65. Kartik Chillakanti,✗LAC,✗—,—
-65. Devin Flynn,✗LAC,✗—,—
-67. Brian Hunter,✗LAC,✗TB,—
-68. Ben Ibach,✗LAC,✗—,—
-68. Robert Herndon,✗LAC,✗—,—
-70. Jack Allen,✗MIA,✗TB,—
-71. Matt Scarcella,✗LAC,✗TB,—
+﻿Entry,Wk 1,Wk 2,Wk 3,Wk 4
+1. Sean Hakim 💵💵,✗LAC,✗TB,✓ATL,—
+2. David Hooten 💵,✗LAC,✗TB,✓KC,—
+2. Juan Brando 💰,✗LAC,✗TB,✓KC,—
+2. Brady Shepherd 💲,✗LAC,✗TB,✓KC,—
+5. kevin.hagenlocher,✗LAC,✗—,✓SF,—
+6. Chris Palantino,✗LAC,✗TB,✓DET,—
+7. Matt HardingYou,✗LAC,✗TB,✓SF,—
+8. Walt Maruschak,✗LAC,✗BAL,✓DET,—
+9. Jack Allen,✗MIA,✗TB,✓KC,—
+10. Matt Scarcella,✗LAC,✗TB,✓KC,—
+11. Ryan Murrell,✗LAC,✓SF,✗GB,—
+12. Max Leonard,✗LAC,✓CAR,✗GB,—
+13. Sid Naik,✗LAC,✓SF,✗—,—
+14. David Yavorsky,✗LAC,✓CAR,✗GB,—
+15. Rob Kluger,✓JAX,✗TB,✗SEA,—
+16. Matt Richard,✗LAC,✓PHI,✗GB,—
+17. Alejandro Zuloaga💰,✓JAX,✗TB,✗GB,—
+18. Dudley Gwaltney,✗LAC,✓SF,✗GB,—
+19. Winnie Wu,✓DET,✗TB,✗GB,—
+20. Moka Shepherd,✓PHI,✗LAC,✗GB,—
+21. Henry Peabody,✗DAL,✗TB,✗HOU,—
+22. Zale Shah 🥈,✓DET,✗BAL,✗CAR,—
+23. Mia Kane-Hester,✗LAC,✗TB,✗SEA,—
+24. Rob Horenstein,✓PIT,✗TB,✗GB,—
+25. easchaeffler,✓JAX,✗TB,✗GB,—
+26. Andrea Morris 💵,✓PIT,✗TB,✗CAR,—
+27. Tyler Linkins 💵,✓LV,✗TB,✗SEA,—
+28. Andrew Mistretta,✓DET,✗TB,✗GB,—
+29. Mariana Martinez,✓JAX,✗BAL,✗PHI,—
+30. Alex Sohani 💵,✓JAX,✗TB,✗GB,—
+31. Thomas LaPorte,✓PIT,✗BAL,✗GB,—
+32. Thomas LaPorte 4,✗LAC,✗TB,✗GB,—
+33. Kelly Krichten,✗LAC,✗TB,✗SEA,—
+34. Brendan Dugan,✗LAC,✓LAR,✗PHI,—
+35. Tony Greco,✗TEN,✓PHI,✗GB,—
+36. Tim Mulhern 💵,✓JAX,✗TB,✗CAR,—
+37. RodrigoEspinosa 💰,✗TEN,✗ARI,✗GB,—
+38. Joshua Mindlin,✓JAX,✗TB,✗—,—
+39. Neill Giovanetti,✗LAC,✓CAR,✗—,—
+40. Esteban Solano,✗LAC,✗TB,✗GB,—
+41. Riley Glassmann 373,✓JAX,✗TB,✗GB,—
+42. James Leyden,✓JAX,✗TB,✗—,—
+43. Eric Zoldessy,✗LAC,✓KC,✗PHI,—
+44. Elena Bonilla,✗LAC,✗TB,✗CAR,—
+45. Ephraim MICHAEL,✓JAX,✗—,✗—,—
+46. Jon Bogac,✓DET,✗CHI,✗—,—
+47. Alex Trier,✓PHI,✗TB,✗GB,—
+48. Rob O’Brien 2,✓JAX,✗TB,✗CIN,—
+49. Brooks Taylor,✓JAX,✗TB,✗—,—
+50. Rohan Hebbar,✗LAC,✗—,✗SEA,—
+51. Aden Tully,✗LAC,✓CAR,✗—,—
+52. Rohan Mundkur,✓JAX,✗—,✗GB,—
+53. Zach Plummer,✓DET,✗LAC,✗GB,—
+54. Ryan Mathew,✗LAC,✓KC,✗GB,—
+55. Rhys Harwell,✗LAC,✓PHI,✗GB,—
+56. Sunny Sharma,✓JAX,✗TB,✗—,—
+57. Parhum Nankali,✗LAC,✓SF,✗SEA,—
+58. Kyle Smith,✗LAC,✗TB,✗DAL,—
+59. Wray Manning,✗LAC,✓PHI,✗SEA,—
+60. Alwin Mathew,✓CIN,✗BAL,✗—,—
+61. Matt Quinlan,✓JAX,✗—,✗SEA,—
+62. Vahid Raboodan,✓JAX,✗TB,✗TEN,—
+63. Derron Morris,✗LAC,✓PHI,✗—,—
+,,,,
+,,,,
+,,,,
