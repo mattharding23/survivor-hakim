@@ -1,31 +1,31 @@
 {
-  "week": 3,
-  "generated_at": "2026-09-23T14:04:09.051899+00:00",
+  "week": 4,
+  "generated_at": "2026-09-30T01:18:46.489271+00:00",
   "charts": [
     {
       "key": "win_probability",
       "label": "Win Probability",
-      "file": "week_03_hakim_win_probability.png"
+      "file": "week_04_hakim_win_probability.png"
     },
     {
       "key": "pick_distribution",
       "label": "Pick Distribution",
-      "file": "week_03_hakim_pick_distribution.png"
+      "file": "week_04_hakim_pick_distribution.png"
     },
     {
       "key": "best_picks",
       "label": "Best Picks",
-      "file": "week_03_hakim_best_picks.png"
+      "file": "week_04_hakim_best_picks.png"
     },
     {
       "key": "ranked_table",
       "label": "Ranked Table",
-      "file": "week_03_hakim_ranked_table.png"
+      "file": "week_04_hakim_ranked_table.png"
     },
     {
       "key": "teams_remaining",
       "label": "Teams Remaining (whole pool)",
-      "file": "week_03_hakim_teams_remaining.png"
+      "file": "week_04_hakim_teams_remaining.png"
     }
   ]
 }
