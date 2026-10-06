@@ -4,7 +4,7 @@ Personal weekly pick recommendation for the scohak.com "Survivor Football
 League" -- the real ruleset, not a simplified one: two lives (out on the
 2nd loss, or a $5 buy-back, or a drop to the $1 Consolation pool if that
 2nd loss lands in Weeks 1-7), a Week-6 "Loser's Week" (pick one of your
-Weeks 1-5 winners to *lose*), a Week-15 two-pick week, and a pre-season
+Weeks 1-5 picks, win or loss, to *lose*), a Week-15 two-pick week, and a pre-season
 Double-Dip team nominated for double use. Point differential is tiebreaker
 #6 of 9 only.
 
