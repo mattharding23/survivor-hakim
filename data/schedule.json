@@ -1,7 +1,7 @@
 {
   "season": 2026,
-  "week": 4,
-  "generated_at": "2026-09-30T01:18:46.477468+00:00",
+  "week": 5,
+  "generated_at": "2026-10-07T21:31:01.218956+00:00",
   "games": [
     {
       "game_id": "2026_01_NE_SEA",
@@ -681,10 +681,10 @@
       "gameday": "2026-10-01",
       "home": "CLE",
       "away": "PIT",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
+      "played": true,
+      "home_score": 27.0,
+      "away_score": 24.0,
+      "winner": "CLE",
       "home_moneyline": 124.0,
       "away_moneyline": -148.0,
       "spread_line": -2.5
@@ -695,13 +695,13 @@
       "gameday": "2026-10-04",
       "home": "WAS",
       "away": "IND",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": 160.0,
-      "away_moneyline": -192.0,
-      "spread_line": -3.5
+      "played": true,
+      "home_score": 13.0,
+      "away_score": 30.0,
+      "winner": "IND",
+      "home_moneyline": 190.0,
+      "away_moneyline": -230.0,
+      "spread_line": -4.5
     },
     {
       "game_id": "2026_04_TEN_BAL",
@@ -709,12 +709,12 @@
       "gameday": "2026-10-04",
       "home": "BAL",
       "away": "TEN",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -750.0,
-      "away_moneyline": 525.0,
+      "played": true,
+      "home_score": 24.0,
+      "away_score": 18.0,
+      "winner": "BAL",
+      "home_moneyline": -800.0,
+      "away_moneyline": 550.0,
       "spread_line": 11.5
     },
     {
@@ -723,12 +723,12 @@
       "gameday": "2026-10-04",
       "home": "BUF",
       "away": "NE",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -298.0,
-      "away_moneyline": 240.0,
+      "played": true,
+      "home_score": 26.0,
+      "away_score": 29.0,
+      "winner": "NE",
+      "home_moneyline": -345.0,
+      "away_moneyline": 275.0,
       "spread_line": 7.0
     },
     {
@@ -737,12 +737,12 @@
       "gameday": "2026-10-04",
       "home": "CHI",
       "away": "NYJ",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -175.0,
-      "away_moneyline": 145.0,
+      "played": true,
+      "home_score": 23.0,
+      "away_score": 12.0,
+      "winner": "CHI",
+      "home_moneyline": -192.0,
+      "away_moneyline": 160.0,
       "spread_line": 3.5
     },
     {
@@ -751,10 +751,10 @@
       "gameday": "2026-10-04",
       "home": "CIN",
       "away": "JAX",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
+      "played": true,
+      "home_score": 17.0,
+      "away_score": 22.0,
+      "winner": "JAX",
       "home_moneyline": -148.0,
       "away_moneyline": 124.0,
       "spread_line": 2.5
@@ -765,13 +765,13 @@
       "gameday": "2026-10-04",
       "home": "HOU",
       "away": "DAL",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -142.0,
-      "away_moneyline": 120.0,
-      "spread_line": 2.5
+      "played": true,
+      "home_score": 30.0,
+      "away_score": 34.0,
+      "winner": "DAL",
+      "home_moneyline": -155.0,
+      "away_moneyline": 130.0,
+      "spread_line": 3.0
     },
     {
       "game_id": "2026_04_ARI_NYG",
@@ -779,13 +779,13 @@
       "gameday": "2026-10-04",
       "home": "NYG",
       "away": "ARI",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": 105.0,
-      "away_moneyline": -125.0,
-      "spread_line": -1.5
+      "played": true,
+      "home_score": 36.0,
+      "away_score": 24.0,
+      "winner": "NYG",
+      "home_moneyline": 114.0,
+      "away_moneyline": -135.0,
+      "spread_line": -2.5
     },
     {
       "game_id": "2026_04_LA_PHI",
@@ -793,13 +793,13 @@
       "gameday": "2026-10-04",
       "home": "PHI",
       "away": "LA",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": 136.0,
-      "away_moneyline": -162.0,
-      "spread_line": -3.0
+      "played": true,
+      "home_score": 20.0,
+      "away_score": 24.0,
+      "winner": "LA",
+      "home_moneyline": 164.0,
+      "away_moneyline": -198.0,
+      "spread_line": -3.5
     },
     {
       "game_id": "2026_04_GB_TB",
@@ -807,13 +807,13 @@
       "gameday": "2026-10-04",
       "home": "TB",
       "away": "GB",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": 160.0,
-      "away_moneyline": -192.0,
-      "spread_line": -3.5
+      "played": true,
+      "home_score": 14.0,
+      "away_score": 17.0,
+      "winner": "GB",
+      "home_moneyline": 130.0,
+      "away_moneyline": -155.0,
+      "spread_line": -3.0
     },
     {
       "game_id": "2026_04_MIA_MIN",
@@ -821,13 +821,13 @@
       "gameday": "2026-10-04",
       "home": "MIN",
       "away": "MIA",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -650.0,
-      "away_moneyline": 470.0,
-      "spread_line": 10.5
+      "played": true,
+      "home_score": 15.0,
+      "away_score": 10.0,
+      "winner": "MIN",
+      "home_moneyline": -535.0,
+      "away_moneyline": 400.0,
+      "spread_line": 10.0
     },
     {
       "game_id": "2026_04_KC_LV",
@@ -835,10 +835,10 @@
       "gameday": "2026-10-04",
       "home": "LV",
       "away": "KC",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
+      "played": true,
+      "home_score": 27.0,
+      "away_score": 30.0,
+      "winner": "KC",
       "home_moneyline": 185.0,
       "away_moneyline": -225.0,
       "spread_line": -4.5
@@ -849,12 +849,12 @@
       "gameday": "2026-10-04",
       "home": "SEA",
       "away": "LAC",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -355.0,
-      "away_moneyline": 280.0,
+      "played": true,
+      "home_score": 30.0,
+      "away_score": 23.0,
+      "winner": "SEA",
+      "home_moneyline": -345.0,
+      "away_moneyline": 275.0,
       "spread_line": 7.0
     },
     {
@@ -863,12 +863,12 @@
       "gameday": "2026-10-04",
       "home": "SF",
       "away": "DEN",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -155.0,
-      "away_moneyline": 130.0,
+      "played": true,
+      "home_score": 24.0,
+      "away_score": 14.0,
+      "winner": "SF",
+      "home_moneyline": -166.0,
+      "away_moneyline": 140.0,
       "spread_line": 3.0
     },
     {
@@ -877,13 +877,13 @@
       "gameday": "2026-10-04",
       "home": "CAR",
       "away": "DET",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": 150.0,
-      "away_moneyline": -180.0,
-      "spread_line": -3.5
+      "played": true,
+      "home_score": 32.0,
+      "away_score": 26.0,
+      "winner": "CAR",
+      "home_moneyline": 185.0,
+      "away_moneyline": -225.0,
+      "spread_line": -4.5
     },
     {
       "game_id": "2026_04_ATL_NO",
@@ -891,13 +891,13 @@
       "gameday": "2026-10-05",
       "home": "NO",
       "away": "ATL",
-      "played": false,
-      "home_score": null,
-      "away_score": null,
-      "winner": null,
-      "home_moneyline": -155.0,
-      "away_moneyline": 130.0,
-      "spread_line": 3.0
+      "played": true,
+      "home_score": 24.0,
+      "away_score": 45.0,
+      "winner": "ATL",
+      "home_moneyline": -118.0,
+      "away_moneyline": -102.0,
+      "spread_line": 1.5
     },
     {
       "game_id": "2026_05_TB_DAL",
@@ -909,9 +909,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -535.0,
-      "away_moneyline": 400.0,
-      "spread_line": 9.5
+      "home_moneyline": -470.0,
+      "away_moneyline": 360.0,
+      "spread_line": 8.5
     },
     {
       "game_id": "2026_05_PHI_JAX",
@@ -923,9 +923,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -142.0,
-      "away_moneyline": 120.0,
-      "spread_line": 2.5
+      "home_moneyline": -355.0,
+      "away_moneyline": 280.0,
+      "spread_line": 7.0
     },
     {
       "game_id": "2026_05_CHI_GB",
@@ -937,9 +937,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -135.0,
-      "away_moneyline": 114.0,
-      "spread_line": 2.5
+      "home_moneyline": 124.0,
+      "away_moneyline": -148.0,
+      "spread_line": -2.5
     },
     {
       "game_id": "2026_05_CIN_MIA",
@@ -951,9 +951,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": 370.0,
-      "away_moneyline": -485.0,
-      "spread_line": -8.5
+      "home_moneyline": 270.0,
+      "away_moneyline": -340.0,
+      "spread_line": -6.5
     },
     {
       "game_id": "2026_05_LV_NE",
@@ -965,8 +965,8 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -180.0,
-      "away_moneyline": 150.0,
+      "home_moneyline": -198.0,
+      "away_moneyline": 164.0,
       "spread_line": 3.5
     },
     {
@@ -979,9 +979,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": 120.0,
-      "away_moneyline": -142.0,
-      "spread_line": -2.5
+      "home_moneyline": 105.0,
+      "away_moneyline": -125.0,
+      "spread_line": -1.5
     },
     {
       "game_id": "2026_05_CLE_NYJ",
@@ -993,9 +993,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -142.0,
-      "away_moneyline": 120.0,
-      "spread_line": 2.5
+      "home_moneyline": -125.0,
+      "away_moneyline": 105.0,
+      "spread_line": 1.5
     },
     {
       "game_id": "2026_05_IND_PIT",
@@ -1007,8 +1007,8 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -142.0,
-      "away_moneyline": 120.0,
+      "home_moneyline": -148.0,
+      "away_moneyline": 124.0,
       "spread_line": 2.5
     },
     {
@@ -1021,9 +1021,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": 240.0,
-      "away_moneyline": -298.0,
-      "spread_line": -6.5
+      "home_moneyline": 285.0,
+      "away_moneyline": -360.0,
+      "spread_line": -7.5
     },
     {
       "game_id": "2026_05_NYG_WAS",
@@ -1035,9 +1035,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -142.0,
-      "away_moneyline": 120.0,
-      "spread_line": 2.5
+      "home_moneyline": -175.0,
+      "away_moneyline": 145.0,
+      "spread_line": 3.5
     },
     {
       "game_id": "2026_05_DEN_LAC",
@@ -1049,9 +1049,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": 114.0,
-      "away_moneyline": -135.0,
-      "spread_line": -2.5
+      "home_moneyline": 154.0,
+      "away_moneyline": -185.0,
+      "spread_line": -3.5
     },
     {
       "game_id": "2026_05_DET_ARI",
@@ -1063,8 +1063,8 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": 200.0,
-      "away_moneyline": -245.0,
+      "home_moneyline": 205.0,
+      "away_moneyline": -250.0,
       "spread_line": -5.5
     },
     {
@@ -1077,9 +1077,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -170.0,
-      "away_moneyline": 142.0,
-      "spread_line": 3.0
+      "home_moneyline": -155.0,
+      "away_moneyline": 130.0,
+      "spread_line": 2.5
     },
     {
       "game_id": "2026_05_BAL_ATL",
@@ -1091,9 +1091,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": 225.0,
-      "away_moneyline": -278.0,
-      "spread_line": -6.0
+      "home_moneyline": -180.0,
+      "away_moneyline": 150.0,
+      "spread_line": 3.5
     },
     {
       "game_id": "2026_05_BUF_LA",
@@ -1105,9 +1105,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": -130.0,
-      "away_moneyline": 110.0,
-      "spread_line": 2.5
+      "home_moneyline": -162.0,
+      "away_moneyline": 136.0,
+      "spread_line": 3.0
     },
     {
       "game_id": "2026_06_SEA_DEN",
@@ -1119,9 +1119,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": 105.0,
+      "away_moneyline": -125.0,
+      "spread_line": -1.5
     },
     {
       "game_id": "2026_06_HOU_JAX",
@@ -1133,9 +1133,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -175.0,
+      "away_moneyline": 145.0,
+      "spread_line": 3.0
     },
     {
       "game_id": "2026_06_CHI_ATL",
@@ -1147,9 +1147,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": 105.0,
+      "away_moneyline": -125.0,
+      "spread_line": -1.5
     },
     {
       "game_id": "2026_06_BAL_CLE",
@@ -1161,9 +1161,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": 120.0,
+      "away_moneyline": -142.0,
+      "spread_line": -2.5
     },
     {
       "game_id": "2026_06_TEN_IND",
@@ -1175,9 +1175,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -310.0,
+      "away_moneyline": 250.0,
+      "spread_line": 6.5
     },
     {
       "game_id": "2026_06_NYJ_NE",
@@ -1189,9 +1189,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -340.0,
+      "away_moneyline": 270.0,
+      "spread_line": 7.0
     },
     {
       "game_id": "2026_06_NO_NYG",
@@ -1203,9 +1203,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -102.0,
+      "away_moneyline": -118.0,
+      "spread_line": -1.5
     },
     {
       "game_id": "2026_06_CAR_PHI",
@@ -1217,9 +1217,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -135.0,
+      "away_moneyline": 114.0,
+      "spread_line": 2.5
     },
     {
       "game_id": "2026_06_PIT_TB",
@@ -1231,9 +1231,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": 130.0,
+      "away_moneyline": -155.0,
+      "spread_line": -3.0
     },
     {
       "game_id": "2026_06_ARI_LA",
@@ -1245,9 +1245,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -625.0,
+      "away_moneyline": 455.0,
+      "spread_line": 10.5
     },
     {
       "game_id": "2026_06_LAC_KC",
@@ -1259,9 +1259,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -395.0,
+      "away_moneyline": 310.0,
+      "spread_line": 7.5
     },
     {
       "game_id": "2026_06_BUF_LV",
@@ -1273,9 +1273,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": 185.0,
+      "away_moneyline": -225.0,
+      "spread_line": -4.5
     },
     {
       "game_id": "2026_06_DAL_GB",
@@ -1287,9 +1287,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": 120.0,
+      "away_moneyline": -142.0,
+      "spread_line": -2.5
     },
     {
       "game_id": "2026_06_WAS_SF",
@@ -1301,9 +1301,9 @@
       "home_score": null,
       "away_score": null,
       "winner": null,
-      "home_moneyline": null,
-      "away_moneyline": null,
-      "spread_line": null
+      "home_moneyline": -410.0,
+      "away_moneyline": 320.0,
+      "spread_line": 7.5
     },
     {
       "game_id": "2026_07_NE_CHI",
