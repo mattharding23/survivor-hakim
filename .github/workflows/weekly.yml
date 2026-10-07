@@ -1,8 +1,9 @@
 name: Weekly Hakim recommendation
 
 # Same DST-safe gate as survivor-lms: GitHub Actions cron is UTC-only, so two
-# cron lines cover both DST states and a `gate` job checks the *real*
-# America/New_York wall clock before doing any work. Whichever cron line
+# cron lines cover both DST states and a `gate` job only lets through the line
+# that is 9am ET under the current DST state (it doesn't check the clock --
+# scheduled runs often fire hours late). Whichever cron line
 # doesn't match shows as "skipped" (not "failed") in the Actions UI.
 on:
   schedule:
@@ -33,9 +34,14 @@ jobs:
             echo "should_run=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          hour="$(TZ=America/New_York date +%H)"
-          echo "Wall-clock America/New_York hour: $hour"
-          if [ "$hour" = "09" ]; then
+          # GitHub often fires scheduled runs hours late, so don't require the
+          # wall clock to still read 9am. Instead run whichever cron line is the
+          # 9am-ET one for the current DST state (EDT -> 13 UTC, EST -> 14 UTC);
+          # the other line is skipped, so this still runs exactly once a week.
+          offset="$(TZ=America/New_York date +%z)"
+          if [ "$offset" = "-0400" ]; then want='0 13 * * 3'; else want='0 14 * * 3'; fi
+          echo "America/New_York offset: $offset; fired by: '${{ github.event.schedule }}'; want: '$want'"
+          if [ "${{ github.event.schedule }}" = "$want" ]; then
             echo "should_run=true" >> "$GITHUB_OUTPUT"
           else
             echo "should_run=false" >> "$GITHUB_OUTPUT"
