@@ -112,6 +112,8 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
     rows = []
     if current_week == LOSERS_WEEK:
         pool = list(dict.fromkeys(weeks_1_5_win_picks(my_picks)))
+        pool = [t for t in pool                                    # can't "lose" on a bye
+                if pd.notna(wp.loc[t, current_week]) and wp.loc[t, current_week] > 0]
         for t in pool:
             pw = float(wp.loc[t, current_week]) if pd.notna(wp.loc[t, current_week]) else np.nan
             r = beam_search_path(wp, exp_margin, cfg, hcfg, current_week, used0, my_picks,
