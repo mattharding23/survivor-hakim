@@ -1,78 +1,96 @@
-﻿Entry,Wk 1,Wk 2,Wk 3,Wk 4,Wk 5,Wk 6 · L,Wk 7
-1. Juan Brando 💰,✗LAC,✗TB,✓KC,✓BAL,✓CIN,✓LAC,—
-2. kevin.hagenlocher,✗LAC,✗—,✓SF,✓BAL,✓MIN,✓LAC,—
-3. Matt HardingYou,✗LAC,✗TB,✓SF,✓MIN,✓HOU,✓LAC,—
-4. Walt Maruschak,✗LAC,✗BAL,✓DET,✓MIN,✓HOU,✓LAC,—
-5. Ryan Murrell,✗LAC,✓SF,✗GB,✓MIN,✓CIN,✓LAC,—
-6. Max Leonard,✗LAC,✓CAR,✗GB,✓MIN,✓CIN,✓LAC,—
-7. Moka Shepherd,✓PHI,✗LAC,✗GB,✓MIN,✓CIN,✓LAC,—
-8. Mia Kane-Hester*,✗LAC,✗TB,✗SEA,✓BAL,✓CIN,✓LAC,—
-9. Andrea Morris 💵,✓PIT,✗TB,✗CAR,✓MIN,✓HOU,✓TB,—
-10. Mariana Martinez,✓JAX,✗BAL,✗PHI,✓MIN,✓CIN,✓PHI,—
-11. Tim Mulhern 💵,✓JAX,✗TB,✗CAR,✓BAL,✓CIN,✓TB,—
-12. Riley Glassmann 373,✓JAX,✗TB,✗GB,✓BAL,✓HOU,✓TB,—
-13. Alex Trier,✓PHI,✗TB,✗GB,✓MIN,✓CIN,✓TB,—
-14. Sean Hakim 💵💵,✗LAC,✗TB,✓ATL,✓MIN,≈WSH,✓LAC,—
-15. David Hooten 💵*,✗LAC,✗TB,✓KC,✓BAL,✗DAL,✓LAC,—
-16. Chris Palantino*,✗LAC,✗TB,✓DET,✗BUF,✓CIN,✓LAC,—
-17. Ian Shepherd 🏆🏆 💵,✓JAX,✗BAL,✓SF,✓SEA,✗DAL,✓SEA,—
-18. Patrick Williams,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓TB,—
-19. Aaron Wagner,✗LAC,✓SF,✓DET,✓BAL,✗DAL,✓LAC,—
-20. Joe Scardino,✓DET,✗LAC,✓SF,✓MIN,✗DAL,✓LAC,—
-21. Jack Schultheis,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓TB,—
-22. Tyler Wagner 💵,✗LAC,✓SF,✓DET,✓BAL,✗DAL,✓LAC,—
-23. Tyler Bowers,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓TB,—
-24. Jon Morris,✗LAC,✓PHI,✓KC,✓BAL,✗DAL,✓LAC,—
-25. Matt Wysocki,✓LV,✗TB,✓DET,✓MIN,✗DAL,✓LV,—
-26. Jason Pressler,✗LAC,✓SF,✓KC,✓BAL,✗DAL,✓LAC,—
-27. Josh Vervack 💵,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓DAL,—
-28. Chris Tolosa,✓PIT,✗TB,✓KC,✓BAL,✗DAL,✓TB,—
-29. Thomas LaPorte 2,✓JAX,✗LAC,✓DET,✓BAL,✗DAL,✓LAC,—
-30. Thomas LaPorte 4**,✗LAC,✗TB,✗GB,✓MIN,✗DAL,✓LAC,—
-31. Carlos Oceguera 💵,✓BUF,✓KC,✓DEN,✗DET,✗DAL,✓DAL,—
-32. mark jakubik,✓JAX,✗TB,✓KC,✓MIN,✗DAL,✓DAL,—
-33. Jason Grimm,✓PHI,✗TB,✓BUF,✓MIN,✗DAL,✓TB,—
-34. Alexander Alexandrou🥉🥉 💵,✓JAX,✗TB,✓KC,✓MIN,✗DAL,✓TB,—
-35. Juan Correales,✗LAC,✓SF,✓KC,✓MIN,✗DAL,✓LAC,—
-36. Juan Guillermo Trujillo,✗LAC,✓SF,✓DET,✓BAL,✗DAL,✓LAC,—
-37. Ryan Courville,✗LAC,✓SF,✓KC,✓BAL,✗DAL,✓LAC,—
-38. Matt Bailey,✓JAX,✗TB,✓KC,✓MIN,✗DAL,✓TB,—
-39. Benjamin Richardson 💵,✓JAX,✓SF,✗CAR,✓BAL,✓HOU,✗HOU,—
-40. Eric Malakoff,✓PHI,✓SF,✓KC,✓MIN,✗CLE,✗CLE,—
-41. Stuart Beeson,✓JAX,✓SF,✗GB,✓BAL,✓HOU,✗HOU,—
-42. Derek Jess,✓DET,✓SF,✓BUF,✓MIN,✗—,✗BUF,—
-43. Kelvin Torrescruz,✓BUF,✗JAX,✓KC,✓NYG,✓CIN,✗BUF,—
-44. Erin Henry,✓JAX,✓SF,✓KC,✓MIN,✗DAL,✗—,—
-45. Valeria Angarita,✓DET,✓SF,✗SEA,✓MIN,✓HOU,✗HOU,—
-46. Brian Evans,✓JAX,✗BAL,✓SF,✓MIN,✓HOU,✗HOU,—
-47. Garrick Krichten 💵,✓JAX,✓SF,✗SEA,✓BAL,✓HOU,✗HOU,—
-48. Jonathan Torres,✓DET,✓CAR,✗SEA,✓MIN,✓HOU,✗HOU,—
-49. Tyler Aprahamian,✓PHI,✓NE,✓NYG,✓SEA,✗DAL,✗—,—
-50. Sam Haines,✓JAX,✗TB,✓KC,✓MIN,✓HOU,✗HOU,—
-51. Adam Leonard,✓JAX,✓PHI,✓KC,✗ARI,✓CIN,✗ARI,—
-52. Camilo Espinosa,✓JAX,✓SF,✗CAR,✓BAL,✓HOU,✗HOU,—
-53. Annie MKay 💵,✓JAX,✗TB,✓DET,✓BAL,✓DEN,✗DEN,—
-54. Kendall Erramilli,✓JAX,✗TB,✓KC,✓SEA,✓HOU,✗HOU,—
-55. Lillian Martinez,✓JAX,✓PHI,✓KC,✗ARI,✓CIN,✗ARI,—
-56. Kelly Smulovitz,✓JAX,✓PHI,✗SEA,✓MIN,✓HOU,✗HOU,—
-57. Eric Jesse,✓JAX,✓CAR,✓IND,✓GB,✗CLE,✗CLE,—
-Eliminated,,,,,,,
-58. Parth Patel,✓DET,✓SF,✓KC,✗ARI,✗DAL,✗ARI,—
-59. Joel Torres 🥈,✓JAX,✓SF,✗CAR,✓BAL,✗CLE,✗CLE,—
-60. Sahil Bellare,✓JAX,✓SF,✗CAR,✓MIN,✗DAL,✗CAR,—
-61. easchaeffler,✓JAX,✗TB,✗GB,✓BAL,✓HOU,✗HOU,—
-62. Fat Daddy,✗TEN,✓PHI,✓SF,✓MIN,✗CLE,✗TEN,—
-63. Joshua Ledgerwood,✗—,✓SF,✓JAX,✗NO,✓DEN,✗DEN,—
-64. RodrigoEspinosa 💰**,✗TEN,✗ARI,✗GB,✓MIN,✗DAL,✗ARI,—
-65. Brady Shepherd 💲,✗LAC,✗TB,✓KC,✓BAL,✗DAL,✓LAC,—
-66. Tyler Linkins 💵,✓LV,✗TB,✗SEA,✓BAL,✗DAL,—,—
-67. Zach Plummer,✓DET,✗LAC,✗GB,✓MIN,✗—,—,—
-68. Winnie Wu,✓DET,✗TB,✗GB,✓KC,✗NO,—,—
-69. Rob Kluger,✓JAX,✗TB,✗SEA,✗ARI,—,—,—
-70. Matt Scarcella,✗LAC,✗TB,✓KC,✗—,—,—,—
-71. Rohan Hebbar,✗LAC,✗—,✗SEA,✗—,—,—,—
-72. Henry Peabody,✗DAL,✗TB,✗HOU,✗—,—,—,—
-73. Kelly Krichten,✗LAC,✗TB,✗SEA,✗—,—,—,—
-74. Kyle Smith,✗LAC,✗TB,✗DAL,✗—,—,—,—
-75. Elena Bonilla,✗LAC,✗TB,✗CAR,✗—,—,—,—
-76. Esteban Solano,✗LAC,✗TB,✗GB,✗—,—,—,—
+﻿1. Tim Mulhern 💵,✓JAX,✗TB,✗CAR,✓BAL,✓CIN,✓TB,✓MIN,—
+2. Riley Glassmann 373,✓JAX,✗TB,✗GB,✓BAL,✓HOU,✓TB,✓LAR,—
+3. Sean Hakim 💵💵,✗LAC,✗TB,✓ATL,✓MIN,≈WSH,✓LAC,✓CLE,—
+4. Ian Shepherd 🏆🏆 💵,✓JAX,✗BAL,✓SF,✓SEA,✗DAL,✓SEA,✓MIN,—
+5. Patrick Williams,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓TB,✓MIN,—
+6. Tyler Bowers,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓TB,✓DEN,—
+7. Chris Tolosa,✓PIT,✗TB,✓KC,✓BAL,✗DAL,✓TB,✓CLE,—
+8. Eric Malakoff,✓PHI,✓SF,✓KC,✓MIN,✗CLE,✗CLE,✓CIN,—
+9. Camilo Espinosa,✓JAX,✓SF,✗CAR,✓BAL,✓HOU,✗HOU,✓DAL,—
+10. Lillian Martinez,✓JAX,✓PHI,✓KC,✗ARI,✓CIN,✗ARI,✓MIN,—
+11. Claudia Oceguera,✓JAX,✓KC,✓DET,✓MIN,✓HOU,✗HOU,✗NYJ,—
+12. Ryan Lentini,✓JAX,✗TB,✓KC,✓MIN,✓HOU,✓TB,✗CAR,—
+13. Aaron Sumsky,✓DET,✗BAL,✓DET,✓MIN,✓NYJ,✓NYJ,✗HOU,—
+14. Donnell Williamson 🥉,✓DET,✓PHI,✓SF,✓BAL,✗DAL,✓PHI,✗HOU,—
+15. Samantha Sawyer,✓PHI,✗TB,✓SF,✓BAL,✓CIN,✓TB,✗NYJ,—
+16. Kevin Waggoner,✗LAC,✓SF,✓KC,✓MIN,✓HOU,✓LAC,✗—,—
+17. Collin Pellettieri,✗LAC,✓SF,✓DET,✓MIN,≈WSH,✓LAC,✗HOU,—
+18. Gabe Garrido,✓PIT,✗TB,✓SF,✓MIN,✓JAX,✓TB,✗HOU,—
+19. Chris Huffman 💵,✗LAC,✓PHI,✓SF,✓MIN,✓CIN,✓LAC,✗HOU,—
+20. Kris Bowers 🥈 💵,✓PHI,✓DAL,✗SEA,✓MIN,✓HOU,✓PHI,✗NYJ,—
+21. Jordan Ross,✗LAC,✓SF,✓DET,✓MIN,✓CIN,✓LAC,✗NYJ,—
+22. Bruno Shepherd,✓CIN,✓SF,✓DET,✓MIN,✓HOU,✗HOU,✗NYJ,—
+23. Kristine Johanning 💵,✓KC,✓LV,✓BAL,✓DAL,✗ATL,✓LV,✗ARI,—
+24. Will Eifrig,✓JAX,✓SF,✓KC,✓BAL,✗DAL,✓DAL,✗—,—
+25. Laura McHugh,✓JAX,✓SF,✓BUF,✓MIN,✗DAL,✓DAL,✗HOU,—
+26. Devlin Shepherd 💵,✗LAC,✓CAR,✓KC,✓MIN,✓HOU,✓LAC,✗NYJ,—
+27. Nathan McKinnis,✓DET,✗TB,✓SF,✓BAL,✓NYJ,✓NYJ,✗HOU,—
+28. Brad Havlovic,✓CHI,✓LAR,✓KC,✓MIN,✓BUF,✗CHI,✗HOU,—
+29. Gus,✗LAC,✓SF,✓KC,✓BAL,✓CIN,✓LAC,✗HOU,—
+30. Thomas LaPorte 5,✓CIN,✓KC,✓SF,✓BAL,✗DAL,✓DAL,✗HOU,—
+31. Maria Osuna 💵,✓JAX,✓KC,✓BUF,✓SEA,✓HOU,✗HOU,✗SF,—
+32. Melissa Byington,✓JAX,✓SF,✗CAR,✓BAL,✓NYJ,✓NYJ,✗HOU,—
+33. Zac Kannan,✓JAX,✗TB,✓KC,✓MIN,✓DET,✓TB,✗HOU,—
+34. Laura Gerdnic,✗LAC,✓GB,✓BUF,✓BAL,✓JAX,✓LAC,✗—,—
+35. Nathan Powell,✓DET,✓PHI,✓KC,✓BAL,✗DAL,✓DAL,✗HOU,—
+36. Logan Fuglestad,✓JAX,✓PHI,✓KC,✓BAL,✓HOU,✗HOU,✗NYJ,—
+37. Kyle Engle,✓JAX,✗TB,✓KC,✓BAL,✓CIN,✓TB,✗NYJ,—
+38. Rachel Cornett,✓JAX,✓CAR,✓KC,✓MIN,✓HOU,✗HOU,✗NYJ,—
+39. Joe Keefer,✓JAX,✓SF,✓KC,✓BAL,✗DAL,✓DAL,✗HOU,—
+40. Vlad Karchevsky 💵,✓JAX,✗TB,✓KC,✓MIN,✓HOU,✓TB,✗NYJ,—
+41. Jay Evans,✓JAX,✓SF,✓KC,✓MIN,✓HOU,✗HOU,✗NYJ,—
+42. Michael Levin-Epstein,✓JAX,✓SF,✓KC,✓MIN,✗DAL,✓DAL,✗HOU,—
+43. John Leach🥈,✓JAX,✓SF,✗CAR,✓BAL,✓HOU,✓JAX,✗NYJ,—
+44. Erin Cummins,✓JAX,✗TB,✓SF,✓BAL,✓CIN,✓TB,✗HOU,—
+45. Camille Engle,✗LAC,✓SF,✓KC,✓BAL,✓CIN,✓LAC,✗CAR,—
+46. Momma Tamika,✓JAX,✓SF,✓KC,✓MIN,✗DAL,✓JAX,✗HOU,—
+Eliminated,,,,,,,,
+47. Carlos Oceguera 💵,✓BUF,✓KC,✓DEN,✗DET,✗DAL,✓DAL,✗SF,—
+48. Benjamin Richardson 💵,✓JAX,✓SF,✗CAR,✓BAL,✓HOU,✗HOU,✗NYJ,—
+49. Annie MKay 💵,✓JAX,✗TB,✓DET,✓BAL,✓DEN,✗DEN,✗HOU,—
+50. Josh Vervack 💵,✓JAX,✗TB,✓KC,✓BAL,✗DAL,✓DAL,✗NYJ,—
+51. Alexander Alexandrou🥉🥉 💵,✓JAX,✗TB,✓KC,✓MIN,✗DAL,✓TB,✗NYJ,—
+52. Matt Bailey,✓JAX,✗TB,✓KC,✓MIN,✗DAL,✓TB,✗HOU,—
+53. Thomas LaPorte 2,✓JAX,✗LAC,✓DET,✓BAL,✗DAL,✓LAC,✗HOU,—
+54. Matt Wysocki,✓LV,✗TB,✓DET,✓MIN,✗DAL,✓LV,✗HOU,—
+55. Joe Scardino,✓DET,✗LAC,✓SF,✓MIN,✗DAL,✓LAC,✗NYJ,—
+56. Jason Grimm,✓PHI,✗TB,✓BUF,✓MIN,✗DAL,✓TB,✗CAR,—
+57. Andrea Morris 💵,✓PIT,✗TB,✗CAR,✓MIN,✓HOU,✓TB,✗NYJ,—
+58. Mariana Martinez,✓JAX,✗BAL,✗PHI,✓MIN,✓CIN,✓PHI,✗HOU,—
+59. Moka Shepherd,✓PHI,✗LAC,✗GB,✓MIN,✓CIN,✓LAC,✗HOU,—
+60. Alex Trier,✓PHI,✗TB,✗GB,✓MIN,✓CIN,✓TB,✗HOU,—
+61. Jason Pressler,✗LAC,✓SF,✓KC,✓BAL,✗DAL,✓LAC,✗NYJ,—
+62. Ryan Courville,✗LAC,✓SF,✓KC,✓BAL,✗DAL,✓LAC,✗HOU,—
+63. Aaron Wagner,✗LAC,✓SF,✓DET,✓BAL,✗DAL,✓LAC,✗—,—
+63. Juan Guillermo Trujillo,✗LAC,✓SF,✓DET,✓BAL,✗DAL,✓LAC,✗—,—
+65. Juan Correales,✗LAC,✓SF,✓KC,✓MIN,✗DAL,✓LAC,✗HOU,—
+66. Tyler Wagner 💵,✗LAC,✓SF,✓DET,✓BAL,✗DAL,✓LAC,✗HOU,—
+67. Jon Morris,✗LAC,✓PHI,✓KC,✓BAL,✗DAL,✓LAC,✗—,—
+68. Max Leonard,✗LAC,✓CAR,✗GB,✓MIN,✓CIN,✓LAC,✗SF,—
+69. Ryan Murrell,✗LAC,✓SF,✗GB,✓MIN,✓CIN,✓LAC,✗HOU,—
+70. Matt HardingYou,✗LAC,✗TB,✓SF,✓MIN,✓HOU,✓LAC,✗NYJ,—
+71. Walt Maruschak,✗LAC,✗BAL,✓DET,✓MIN,✓HOU,✓LAC,✗NYJ,—
+72. kevin.hagenlocher,✗LAC,✗—,✓SF,✓BAL,✓MIN,✓LAC,✗—,—
+73. Juan Brando 💰,✗LAC,✗TB,✓KC,✓BAL,✓CIN,✓LAC,✗NYJ,—
+74. Parth Patel,✓DET,✓SF,✓KC,✗ARI,✗DAL,✗ARI,✗CAR,—
+75. David Hooten 💵*,✗LAC,✗TB,✓KC,✓BAL,✗DAL,✓LAC,✗HOU,—
+76. Chris Palantino*,✗LAC,✗TB,✓DET,✗BUF,✓CIN,✓LAC,✗HOU,—
+77. Mia Kane-Hester*,✗LAC,✗TB,✗SEA,✓BAL,✓CIN,✓LAC,✗—,—
+78. Thomas LaPorte 4**,✗LAC,✗TB,✗GB,✓MIN,✗DAL,✓LAC,✗NYJ,—
+79. Joel Torres 🥈,✓JAX,✓SF,✗CAR,✓BAL,✗CLE,✗CLE,—,—
+80. Sahil Bellare,✓JAX,✓SF,✗CAR,✓MIN,✗DAL,✗CAR,—,—
+81. easchaeffler,✓JAX,✗TB,✗GB,✓BAL,✓HOU,✗HOU,—,—
+82. Joshua Ledgerwood,✗—,✓SF,✓JAX,✗NO,✓DEN,✗DEN,—,—
+83. RodrigoEspinosa 💰**,✗TEN,✗ARI,✗GB,✓MIN,✗DAL,✗ARI,—,—
+84. Brady Shepherd 💲,✗LAC,✗TB,✓KC,✓BAL,✗DAL,✓LAC,—,—
+85. Tyler Linkins 💵,✓LV,✗TB,✗SEA,✓BAL,✗DAL,—,—,—
+86. Zach Plummer,✓DET,✗LAC,✗GB,✓MIN,✗—,—,—,—
+87. Winnie Wu,✓DET,✗TB,✗GB,✓KC,✗NO,—,—,—
+88. Rob Kluger,✓JAX,✗TB,✗SEA,✗ARI,—,—,—,—
+89. Matt Scarcella,✗LAC,✗TB,✓KC,✗—,—,—,—,—
+90. Rohan Hebbar,✗LAC,✗—,✗SEA,✗—,—,—,—,—
+91. Henry Peabody,✗DAL,✗TB,✗HOU,✗—,—,—,—,—
+92. Kelly Krichten,✗LAC,✗TB,✗SEA,✗—,—,—,—,—
+93. Kyle Smith,✗LAC,✗TB,✗DAL,✗—,—,—,—,—
+94. Elena Bonilla,✗LAC,✗TB,✗CAR,✗—,—,—,—,—
+95. Esteban Solano,✗LAC,✗TB,✗GB,✗—,—,—,—,—

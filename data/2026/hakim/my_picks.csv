@@ -5,4 +5,5 @@ week,team,role
 4,MIN,win
 5,HOU,win
 6,LAC,loser
+7,NYJ,win
 # week,team,role  — role: win (default) | loser (Wk6) | w15a | w15b
