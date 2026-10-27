@@ -214,7 +214,7 @@ function renderHakimTable(teams, currentWeek) {
 // ---------------------------------------------------------------------
 // Life tracker
 // ---------------------------------------------------------------------
-function renderLives(lives, livesMax, realizedLosses) {
+function renderLives(lives, livesMax, realizedLosses, buybacks) {
   const pips = document.getElementById("lives-pips");
   const text = document.getElementById("lives-text");
   const lost = livesMax - lives;
@@ -222,7 +222,8 @@ function renderLives(lives, livesMax, realizedLosses) {
     `<span class="pip ${i < lost ? "lost" : "alive"}"></span>`).join("");
   const noun = lives === 1 ? "life" : "lives";
   text.textContent = `${lives} of ${livesMax} ${noun} remaining` +
-    (realizedLosses ? ` (${realizedLosses} realized loss${realizedLosses > 1 ? "es" : ""})` : "");
+    (realizedLosses ? ` (${realizedLosses} realized loss${realizedLosses > 1 ? "es" : ""}` +
+      (buybacks ? `, ${buybacks} bought back` : "") + ")" : "");
 }
 
 // ---------------------------------------------------------------------
@@ -281,7 +282,7 @@ async function loadAll() {
     `· ${ranked.n_participants.toLocaleString()} entries tracked (${ranked.roster_source})`;
   document.getElementById("dd-line").textContent =
     `Double-Dip: ${ranked.double_dip || "not set"}`;
-  renderLives(ranked.lives, ranked.lives_max, ranked.realized_losses);
+  renderLives(ranked.lives, ranked.lives_max, ranked.realized_losses, ranked.buybacks);
 
   renderPctBars(pct.pct, pct.source);
 

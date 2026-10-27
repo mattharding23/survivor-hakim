@@ -135,6 +135,7 @@ def export(cfg: Config, week: int, mode: str, result: dict) -> None:
         mode=mode, lives=result["lives"], lives_max=(1 if mode == "consolation" else 2),
         double_dip=result["double_dip"],
         realized_losses=result["meta"].get("realized_losses", 0),
+        buybacks=result["meta"].get("buybacks", 0),
         n_participants=result["meta"]["n_participants"], n_alive=result["meta"]["n_alive"],
         roster_source=result["meta"]["roster_source"],
         used_counts=result["used_counts"],

@@ -68,14 +68,18 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
     # win-prob matrix, and shrink the life count accordingly -- lives_for_mode()
     # otherwise always assumes you're walking in at full health.
     realized_losses = 0
+    n_buybacks = 0
     if hcfg.lives is None:
         realized_losses = realized_life_losses(my_picks, wp, current_week, entry_week=hcfg.entry_week)
         if realized_losses:
+            # Buy-backs (buybacks.csv) for losses in this pool each restore a life.
+            n_buybacks = sum(1 for w in inp["buybacks"] if hcfg.entry_week <= w < current_week)
             base_lives = hcfg.lives_for_mode()
-            hcfg.lives = max(base_lives - realized_losses, 0)
+            hcfg.lives = min(max(base_lives - realized_losses + n_buybacks, 0), base_lives)
             since = f" since entering it in Week {hcfg.entry_week}" if hcfg.entry_week > 1 else ""
+            bought = f", {n_buybacks} bought back" if n_buybacks else ""
             print(f"[hakim] {realized_losses} of your logged pick(s){since} before Week {current_week} "
-                 f"lost -- modelling {hcfg.lives} life/lives remaining (was {base_lives}). "
+                 f"lost{bought} -- modelling {hcfg.lives} life/lives remaining (was {base_lives}). "
                  f"Pass --lives to override.")
             if hcfg.lives == 0 and mode == "main":
                 print(f"[hakim] You're out of the Main Pool as of Week {current_week} unless you "
@@ -201,7 +205,7 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
                                              if current_week in src.columns else [])),
                   consensus=cmeta, n_participants=len(roster.participants),
                   n_alive=roster.n_opponents_alive(), roster_source=inp["roster_source"],
-                  realized_losses=realized_losses),
+                  realized_losses=realized_losses, buybacks=n_buybacks),
     )
     result["report"] = _write(result, cfg, hcfg)
     return result
@@ -217,7 +221,9 @@ def _write(result: dict, cfg: Config, hcfg: HakimConfig) -> dict:
     L = result["lives"]
     lines = [f"# Hakim League — Week {w} ({cfg.season}) — {result['mode'].title()} Pool\n"]
     rl = result["meta"].get("realized_losses", 0)
-    lives_note = f" — {rl} realized loss(es) already deducted" if rl else ""
+    bb = result["meta"].get("buybacks", 0)
+    lives_note = (f" — {rl} realized loss(es) already deducted" if rl else "") + \
+                 (f", {bb} bought back" if bb else "")
     lines.append(f"- Lives model: **{L} remaining**{lives_note} "
                  f"({'out on next loss' if L == 1 else 'two losses and out' if L == 2 else 'single elimination'})")
     lines.append(f"- Double-Dip team: **{result['double_dip'] or 'not set'}** "

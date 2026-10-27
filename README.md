@@ -30,7 +30,9 @@ plain clone.
 Life tracking auto-detects realized losses in your own logged picks against
 actual game results (`data/2026/hakim/my_picks.csv` vs. the real win-prob
 matrix) and shrinks your modeled life count accordingly, instead of always
-assuming full health -- pass `--lives N` to override (e.g. after a buy-back).
+assuming full health. Buy-backs listed in `data/2026/hakim/buybacks.csv`
+(one line per buy-back: the week of the loss you bought back from) add those
+lives back. Pass `--lives N` to override the whole calculation.
 
 ## Data you maintain
 

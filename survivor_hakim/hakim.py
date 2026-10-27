@@ -185,6 +185,17 @@ def load_hakim_inputs(cfg: Config, hcfg: HakimConfig) -> dict:
                 entry_week = int(line)
                 break
 
+    # buybacks.csv : one line per buy-back, the week of the loss you bought
+    # back from. Each one restores a life the realized-loss count took away.
+    bb_f = d / "buybacks.csv"
+    if not bb_f.exists():
+        bb_f.write_text("week\n# one line per buy-back: the week of the loss you bought back from\n")
+    buybacks = []
+    for line in bb_f.read_text().splitlines():
+        line = line.strip()
+        if line and not line.startswith(("#", "week")):
+            buybacks.append(int(line))
+
     # participants.csv : participant,week,team[,role] — hand-maintained fallback,
     # only consulted when all_picks.csv (the real scohak export) isn't present.
     part_f = d / "participants.csv"
@@ -199,7 +210,8 @@ def load_hakim_inputs(cfg: Config, hcfg: HakimConfig) -> dict:
         roster = Roster.load(part_f)
         roster_source = "participants.csv (manual)"
 
-    return dict(my_picks=my_picks, double_dip=dd, entry_week=entry_week, participants_file=part_f,
+    return dict(my_picks=my_picks, double_dip=dd, entry_week=entry_week, buybacks=buybacks,
+               participants_file=part_f,
                roster=roster, roster_source=roster_source)
 
 
