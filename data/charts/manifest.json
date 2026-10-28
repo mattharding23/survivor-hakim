@@ -1,6 +1,6 @@
 {
   "week": 8,
-  "generated_at": "2026-10-28T17:12:40.775527+00:00",
+  "generated_at": "2026-10-28T17:14:29.442174+00:00",
   "charts": [
     {
       "key": "win_probability",
@@ -21,6 +21,11 @@
       "key": "ranked_table",
       "label": "Ranked Table",
       "file": "week_08_hakim_ranked_table.png"
+    },
+    {
+      "key": "teams_remaining",
+      "label": "Teams Remaining (whole pool)",
+      "file": "week_08_hakim_teams_remaining.png"
     }
   ]
 }

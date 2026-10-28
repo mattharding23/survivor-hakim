@@ -4,15 +4,15 @@
 - Double-Dip team: **BAL** (usable 2×; 3× if also the Wk6 loser)
 - Win-prob sources: odds-api:28
 - Public pick %: survivorgrid
-- Opponent roster: all_picks.csv (0 entrants, 0 alive)
+- Opponent roster: all_picks.csv (95 entrants, 59 alive)
 - Teams used: LAC×1, TB×1, SF×1, MIN×1, HOU×1, NYJ×1
 
-## ✅ Week 8 pick: **CIN (Cincinnati Bengals)**
-- Market win probability: **81.7%**  |  public 37.6%
-- **Expected weeks survived (of 18, 1 lives): 4.5**
-- P(reach season end still alive) = 4.4%  ·  P(never lose all year) = 4.4%
-- Expected cumulative point differential: +119.0 (deep tiebreaker only)
-- Implied plan: `W8:CIN  W9:SEA  W10:LA  W11:BUF  W12:JAX  W13:DEN`
+## ✅ Week 8 pick: **JAX (Jacksonville Jaguars)**
+- Market win probability: **79.0%**  |  public 15.1%
+- **Expected weeks survived (of 18, 1 lives): 4.3**
+- P(reach season end still alive) = 3.5%  ·  P(never lose all year) = 3.5%
+- Expected cumulative point differential: +112.0 (deep tiebreaker only)
+- Implied plan: `W8:JAX  W9:SEA  W10:LA  W11:BUF  W12:DAL  W13:DEN`
 
 ## Optimal season plan (this pool)
 `W8:CIN  W9:SEA  W10:LA  W11:BUF  W12:JAX  W13:DEN  W14:DET  W15:GB+KC  W16:BAL  W17:DAL  W18:NE`
@@ -22,17 +22,17 @@
 ## Ranked options
 |   rank | team   |   win_% |   public_% |   E[wks] |   P(end)_% |   E[pt diff] | plan                                     |
 |-------:|:-------|--------:|-----------:|---------:|-----------:|-------------:|:-----------------------------------------|
-|      1 | CIN    |    81.7 |       37.6 |     4.47 |        4.4 |        119   | W8:CIN  W9:SEA  W10:LA  W11:BUF  W12:JAX |
-|      2 | JAX    |    79   |       15.1 |     4.25 |        3.5 |        112   | W8:JAX  W9:SEA  W10:LA  W11:BUF  W12:DAL |
-|      3 | NE     |    74.3 |       17.1 |     4.15 |        3.7 |        112.5 | W8:NE  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|      4 | DAL    |    73   |        6.4 |     4.09 |        3.6 |        112.5 | W8:DAL  W9:SEA  W10:LA  W11:BUF  W12:JAX |
-|      5 | LA     |    72.1 |       13   |     4.03 |        3.3 |        110   | W8:LA  W9:SEA  W10:JAX  W11:BUF  W12:DAL |
-|      6 | WAS    |    69.1 |        0.9 |     3.93 |        3.8 |        114   | W8:WAS  W9:SEA  W10:LA  W11:BUF  W12:JAX |
+|      1 | JAX    |    79   |       15.1 |     4.25 |        3.5 |        112   | W8:JAX  W9:SEA  W10:LA  W11:BUF  W12:DAL |
+|      2 | CIN    |    81.7 |       37.6 |     4.47 |        4.4 |        119   | W8:CIN  W9:SEA  W10:LA  W11:BUF  W12:JAX |
+|      3 | DAL    |    73   |        6.4 |     4.09 |        3.6 |        112.5 | W8:DAL  W9:SEA  W10:LA  W11:BUF  W12:JAX |
+|      4 | WAS    |    69.1 |        0.9 |     3.93 |        3.8 |        114   | W8:WAS  W9:SEA  W10:LA  W11:BUF  W12:JAX |
+|      5 | NE     |    74.3 |       17.1 |     4.15 |        3.7 |        112.5 | W8:NE  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
+|      6 | LA     |    72.1 |       13   |     4.03 |        3.3 |        110   | W8:LA  W9:SEA  W10:JAX  W11:BUF  W12:DAL |
 |      7 | PIT    |    63.5 |        0.7 |     3.69 |        3.5 |        112   | W8:PIT  W9:SEA  W10:LA  W11:BUF  W12:JAX |
 |      8 | GB     |    64.1 |        3   |     3.68 |        2.7 |        105   | W8:GB  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
 |      9 | DET    |    62.7 |        0.3 |     3.62 |        3   |        107.5 | W8:DET  W9:SEA  W10:LA  W11:BUF  W12:JAX |
-|     10 | BUF    |    61.7 |        2.5 |     3.54 |        2.8 |        106   | W8:BUF  W9:SEA  W10:LA  W11:DAL  W12:JAX |
-|     11 | SEA    |    61.5 |        0.4 |     3.52 |        3   |        108.5 | W8:SEA  W9:KC  W10:LA  W11:BUF  W12:JAX  |
+|     10 | SEA    |    61.5 |        0.4 |     3.52 |        3   |        108.5 | W8:SEA  W9:KC  W10:LA  W11:BUF  W12:JAX  |
+|     11 | BUF    |    61.7 |        2.5 |     3.54 |        2.8 |        106   | W8:BUF  W9:SEA  W10:LA  W11:DAL  W12:JAX |
 |     12 | KC     |    51.1 |        0.2 |     3.16 |        2.6 |        108   | W8:KC  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
 |     13 | DEN    |    48.9 |        0.1 |     2.98 |        2.1 |        100.5 | W8:DEN  W9:SEA  W10:LA  W11:BUF  W12:JAX |
 |     14 | LV     |    46.5 |        1.7 |     2.98 |        2.5 |        107   | W8:LV  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
@@ -51,4 +51,5 @@
 - `week_08_hakim_win_probability.png`
 - `week_08_hakim_pick_distribution.png`
 - `week_08_hakim_best_picks.png`
+- `week_08_hakim_teams_remaining.png`
 - `week_08_hakim_ranked_table.png`
