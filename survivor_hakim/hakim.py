@@ -87,6 +87,13 @@ def load_all_picks_roster(cfg: Config, hcfg: HakimConfig) -> Roster | None:
     if not f.exists():
         return None
     df = pd.read_csv(f, dtype=str, encoding="utf-8-sig").fillna("")
+    # Some exports arrive without the "Entry,Wk 1,..." header row -- the first
+    # entrant ends up as the header. Re-read headerless and rebuild the names
+    # the way scohak writes them (Week 6 as "Wk 6 · L").
+    if "Entry" not in df.columns:
+        df = pd.read_csv(f, dtype=str, encoding="utf-8-sig", header=None).fillna("")
+        df.columns = ["Entry"] + [f"Wk {i}" + (" · L" if i == LOSERS_WEEK else "")
+                                  for i in range(1, len(df.columns))]
     wk_cols = [(c, int(_WK_COL_RE.match(c).group(1))) for c in df.columns
               if _WK_COL_RE.match(c)]
     # In Consolation mode, the export lists entrants who already burned both
