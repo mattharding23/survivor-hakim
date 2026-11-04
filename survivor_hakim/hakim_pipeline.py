@@ -199,7 +199,7 @@ def run(current_week: int, mode: str = "main", double_dip: str | None = None,
         ranked=df, recommendation=(df.iloc[0].to_dict() if len(df) else None),
         base_path=base["path"], base_p_survive=base["p_survive"], base_exp_weeks=base["exp_weeks"],
         base_p_lives=base["p_lives"], base_exp_point_diff=base["exp_point_diff"],
-        used_counts=used0, winprob_matrix=wp, public_pct=public_pct, crowd=crowd, roster=roster,
+        used_counts=used0, my_picks=my_picks, winprob_matrix=wp, public_pct=public_pct, crowd=crowd, roster=roster,
         meta=dict(winprob_sources=", ".join(f"{k}:{v}" for k, v in
                                             (src[current_week].value_counts().to_dict().items()
                                              if current_week in src.columns else [])),

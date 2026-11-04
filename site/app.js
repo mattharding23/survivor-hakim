@@ -212,6 +212,108 @@ function renderHakimTable(teams, currentWeek) {
 }
 
 // ---------------------------------------------------------------------
+// Season grid -- every team x every week, each cell the opponent filled by
+// projected win prob. Teams you've used up are greyed (the Double-Dip team
+// only once both uses are gone), past weeks are muted with your own pick
+// outlined, and the recommended plan is outlined in gold. The Loser's Week
+// column flips to LOSS prob for the teams you're allowed to pick there
+// (anything you picked Weeks 1-5; before Week 6, planned Weeks 1-5 picks
+// show hatched) and greys out everything else.
+// ---------------------------------------------------------------------
+const TWO_PICK_WEEK = 15;
+
+function renderSeasonGrid(games, winprob, ranked) {
+  const week = ranked.week;
+  const used = ranked.used_counts || {};
+  const myPicks = ranked.my_picks || [];
+  const plan = (ranked.recommendation && ranked.recommendation.implied_path) || {};
+  const nWeeks = 18;
+  const weeks = Array.from({ length: nWeeks }, (_, i) => i + 1);
+
+  const opp = {};
+  for (const g of games) {
+    (opp[g.home] ??= {})[g.week] = g.away;
+    (opp[g.away] ??= {})[g.week] = "@" + g.home;
+  }
+
+  const pickedIn = {};  // week -> Set(team) -- your logged picks
+  for (const p of myPicks) (pickedIn[p.week] ??= new Set()).add(p.team);
+  const plannedIn = {}; // week -> Set(team) -- recommended plan, current week onward
+  let planLoser = null;
+  for (const [wk, v] of Object.entries(plan)) {
+    const w = Number(wk);
+    if (w < week) continue;
+    if (Array.isArray(v) && v[0] === "LOSE") { planLoser = v[1]; continue; }
+    plannedIn[w] = new Set(Array.isArray(v) ? v : [v]);
+  }
+
+  const loserPicked = new Set(myPicks.filter(p => p.week < LOSERS_WEEK).map(p => p.team));
+  const loserPlanned = new Set();
+  if (week <= LOSERS_WEEK) {
+    for (let w = week; w < LOSERS_WEEK; w++) for (const t of plannedIn[w] || []) loserPlanned.add(t);
+  }
+
+  const isGone = (t) => (used[t] || 0) >= (t === ranked.double_dip ? 2 : 1);
+  const futureAvg = (t) => {
+    const ps = weeks.filter(w => w >= week).map(w => winprob[t][w]).filter(p => p != null);
+    return ps.length ? ps.reduce((a, b) => a + b, 0) / ps.length : 0;
+  };
+  const teams = Object.keys(winprob).sort((a, b) =>
+    (isGone(a) - isGone(b)) || (futureAvg(b) - futureAvg(a)));
+
+  const pctTxt = (p) => `${Math.round(p * 100)}%`;
+  const cellFor = (t, w) => {
+    const o = opp[t] && opp[t][w];
+    if (!o) return `<td class="bye">BYE</td>`;
+    const p = winprob[t][w];
+    const title = `${t} ${o.startsWith("@") ? "at " + o.slice(1) : "vs " + o}, Week ${w}`;
+    if (w < week) {
+      const mine = pickedIn[w] && pickedIn[w].has(t);
+      return `<td class="past${mine ? " my-pick" : ""}" title="${title}${mine ? " — your pick" : ""}">${o}</td>`;
+    }
+    if (w === LOSERS_WEEK) {
+      const ok = loserPicked.has(t), planned = !ok && loserPlanned.has(t);
+      if (!ok && !planned) return `<td class="gone" title="${title} — not eligible for Loser's Week">${o}</td>`;
+      const c = winProbColor(1 - (p ?? 0.5));
+      const cls = [ok ? "loser-ok" : "loser-planned", t === planLoser ? "plan" : ""].join(" ");
+      return `<td class="${cls}" style="background-color:${c};color:${textOn(c)}" ` +
+        `title="${title} — ${pctTxt(1 - (p ?? 0.5))} to lose${planned ? " (if you pick them Wks 1-5 as planned)" : ""}">${o}</td>`;
+    }
+    if (isGone(t)) return `<td class="gone" title="${title} — already used">${o}</td>`;
+    const c = winProbColor(p ?? 0.5);
+    const inPlan = plannedIn[w] && plannedIn[w].has(t);
+    return `<td class="${inPlan ? "plan" : ""}" style="background:${c};color:${textOn(c)}" ` +
+      `title="${title} — ${p == null ? "no projection" : pctTxt(p) + " to win"}${inPlan ? " — in recommended plan" : ""}">${o}</td>`;
+  };
+
+  const head = weeks.map(w => {
+    const tag = w === LOSERS_WEEK ? "·L" : w === TWO_PICK_WEEK ? "·2" : "";
+    return `<th class="${w === week ? "is-now" : ""}">${w === week ? "▸" : ""}${w}${tag}</th>`;
+  }).join("");
+  const body = teams.map(t => `<tr class="${isGone(t) ? "row-gone" : ""}">
+      <td class="team-cell">${logoImg(t)}<span>${t}</span></td>
+      ${weeks.map(w => cellFor(t, w)).join("")}
+    </tr>`).join("");
+
+  const loserLegend = week <= LOSERS_WEEK
+    ? `<span><i style="box-shadow:inset 0 0 0 2px #6b3fa0;background:${winProbColor(0.75)}"></i>Loser's Week eligible (colored by loss %)</span>
+       <span><i style="box-shadow:inset 0 0 0 2px #6b3fa0;background:${winProbColor(0.75)};background-image:repeating-linear-gradient(45deg,transparent 0 4px,rgba(255,255,255,.35) 4px 7px)"></i>eligible if picked Wks 1-5 as planned</span>`
+    : "";
+  return `<h3>Season Grid <span class="muted">— projected win % by week</span></h3>
+    <div class="tablewrap"><table class="season-grid">
+      <thead><tr><th></th>${head}</tr></thead>
+      <tbody>${body}</tbody>
+    </table></div>
+    <div class="grid-legend">
+      <span><i style="background:linear-gradient(90deg,${winProbColor(0.3)},${winProbColor(0.59)},${winProbColor(0.88)})"></i>win % (30 → 88%)</span>
+      <span><i class="gone" style="background:var(--line)"></i>used / not available</span>
+      <span><i style="outline:2px solid var(--ink);outline-offset:-2px;background:var(--stripe)"></i>your pick</span>
+      <span><i style="outline:2px solid var(--ink);outline-offset:-2px;box-shadow:inset 0 0 0 3px var(--rec-border);background:${winProbColor(0.8)}"></i>recommended plan</span>
+      ${loserLegend}
+    </div>`;
+}
+
+// ---------------------------------------------------------------------
 // Life tracker
 // ---------------------------------------------------------------------
 function renderLives(lives, livesMax, realizedLosses, buybacks) {
@@ -290,6 +392,14 @@ async function loadAll() {
   tableWrap.innerHTML = ranked.teams && ranked.teams.length
     ? renderHakimTable(ranked.teams, ranked.week)
     : "";
+
+  // Optional extras -- an older data/ without these files just hides the grid.
+  Promise.all([getJSON("data/schedule.json"), getJSON("data/winprob.json")])
+    .then(([sched, wp]) => {
+      document.getElementById("season-grid-wrap").innerHTML =
+        renderSeasonGrid(sched.games, wp.teams, ranked);
+    })
+    .catch(() => {});
 
   const tmp = document.createElement("div");
   tmp.innerHTML = renderMarkdown(mdResult);

@@ -139,6 +139,7 @@ def export(cfg: Config, week: int, mode: str, result: dict) -> None:
         n_participants=result["meta"]["n_participants"], n_alive=result["meta"]["n_alive"],
         roster_source=result["meta"]["roster_source"],
         used_counts=result["used_counts"],
+        my_picks=result["my_picks"],
         teams=_clean(ranked.to_dict("records")) if len(ranked) else [],
         recommendation=_clean(result["recommendation"]),
         base_path=result["base_path"], base_exp_weeks=result["base_exp_weeks"],
