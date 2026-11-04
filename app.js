@@ -39,8 +39,9 @@ const logoImg = (abbr) => `<img class="logo" src="${teamLogo(abbr)}" alt="" load
 // Same 3-stop red -> amber -> green scale as the ranked_table chart's win%
 // column (viz.py's _RGGRAD), clamped over the same [0.30, 0.88] win-prob
 // range so a given win% reads as the same color on the site as in the PNG.
-function winProbColor(p) {
-  const t = Math.max(0, Math.min(1, (p - 0.30) / (0.88 - 0.30)));
+// The season grid passes lo=0, hi=1 to stretch it over the full 0-100%.
+function winProbColor(p, lo = 0.30, hi = 0.88) {
+  const t = Math.max(0, Math.min(1, (p - lo) / (hi - lo)));
   const stops = [[0.75, 0.06, 0.16], [0.85, 0.64, 0.25], [0.25, 0.56, 0.16]]; // red, amber, green
   const seg = t < 0.5 ? [stops[0], stops[1], t * 2] : [stops[1], stops[2], (t - 0.5) * 2];
   const [a, b, f] = seg;
@@ -213,7 +214,7 @@ function renderHakimTable(teams, currentWeek) {
 
 // ---------------------------------------------------------------------
 // Season grid -- every team x every week, each cell the opponent filled by
-// projected win prob. Teams you've used up are greyed (the Double-Dip team
+// projected win prob (full 0-100% scale), teams alphabetical. Teams you've used up are greyed (the Double-Dip team
 // only once both uses are gone), past weeks are muted with your own pick
 // outlined, and the recommended plan is outlined in gold. The Loser's Week
 // column flips to LOSS prob for the teams you're allowed to pick there
@@ -254,12 +255,7 @@ function renderSeasonGrid(games, winprob, ranked) {
   }
 
   const isGone = (t) => (used[t] || 0) >= (t === ranked.double_dip ? 2 : 1);
-  const futureAvg = (t) => {
-    const ps = weeks.filter(w => w >= week).map(w => winprob[t][w]).filter(p => p != null);
-    return ps.length ? ps.reduce((a, b) => a + b, 0) / ps.length : 0;
-  };
-  const teams = Object.keys(winprob).sort((a, b) =>
-    (isGone(a) - isGone(b)) || (futureAvg(b) - futureAvg(a)));
+  const teams = Object.keys(winprob).sort();
 
   const pctTxt = (p) => `${Math.round(p * 100)}%`;
   const cellFor = (t, w) => {
@@ -274,13 +270,13 @@ function renderSeasonGrid(games, winprob, ranked) {
     if (w === LOSERS_WEEK) {
       const ok = loserPicked.has(t), planned = !ok && loserPlanned.has(t);
       if (!ok && !planned) return `<td class="gone" title="${title} — not eligible for Loser's Week">${o}</td>`;
-      const c = winProbColor(1 - (p ?? 0.5));
+      const c = winProbColor(1 - (p ?? 0.5), 0, 1);
       const cls = [ok ? "loser-ok" : "loser-planned", t === planLoser ? "plan" : ""].join(" ");
       return `<td class="${cls}" style="background-color:${c};color:${textOn(c)}" ` +
         `title="${title} — ${pctTxt(1 - (p ?? 0.5))} to lose${planned ? " (if you pick them Wks 1-5 as planned)" : ""}">${o}</td>`;
     }
     if (isGone(t)) return `<td class="gone" title="${title} — already used">${o}</td>`;
-    const c = winProbColor(p ?? 0.5);
+    const c = winProbColor(p ?? 0.5, 0, 1);
     const inPlan = plannedIn[w] && plannedIn[w].has(t);
     return `<td class="${inPlan ? "plan" : ""}" style="background:${c};color:${textOn(c)}" ` +
       `title="${title} — ${p == null ? "no projection" : pctTxt(p) + " to win"}${inPlan ? " — in recommended plan" : ""}">${o}</td>`;
@@ -296,8 +292,8 @@ function renderSeasonGrid(games, winprob, ranked) {
     </tr>`).join("");
 
   const loserLegend = week <= LOSERS_WEEK
-    ? `<span><i style="box-shadow:inset 0 0 0 2px #6b3fa0;background:${winProbColor(0.75)}"></i>Loser's Week eligible (colored by loss %)</span>
-       <span><i style="box-shadow:inset 0 0 0 2px #6b3fa0;background:${winProbColor(0.75)};background-image:repeating-linear-gradient(45deg,transparent 0 4px,rgba(255,255,255,.35) 4px 7px)"></i>eligible if picked Wks 1-5 as planned</span>`
+    ? `<span><i style="box-shadow:inset 0 0 0 2px #6b3fa0;background:${winProbColor(0.75, 0, 1)}"></i>Loser's Week eligible (colored by loss %)</span>
+       <span><i style="box-shadow:inset 0 0 0 2px #6b3fa0;background:${winProbColor(0.75, 0, 1)};background-image:repeating-linear-gradient(45deg,transparent 0 4px,rgba(255,255,255,.35) 4px 7px)"></i>eligible if picked Wks 1-5 as planned</span>`
     : "";
   return `<h3>Season Grid <span class="muted">— projected win % by week</span></h3>
     <div class="tablewrap"><table class="season-grid">
@@ -305,10 +301,10 @@ function renderSeasonGrid(games, winprob, ranked) {
       <tbody>${body}</tbody>
     </table></div>
     <div class="grid-legend">
-      <span><i style="background:linear-gradient(90deg,${winProbColor(0.3)},${winProbColor(0.59)},${winProbColor(0.88)})"></i>win % (30 → 88%)</span>
+      <span><i style="background:linear-gradient(90deg,${winProbColor(0, 0, 1)},${winProbColor(0.5, 0, 1)},${winProbColor(1, 0, 1)})"></i>win % (0 → 100%)</span>
       <span><i class="gone" style="background:var(--line)"></i>used / not available</span>
       <span><i style="outline:2px solid var(--ink);outline-offset:-2px;background:var(--stripe)"></i>your pick</span>
-      <span><i style="outline:2px solid var(--ink);outline-offset:-2px;box-shadow:inset 0 0 0 3px var(--rec-border);background:${winProbColor(0.8)}"></i>recommended plan</span>
+      <span><i style="outline:2px solid var(--ink);outline-offset:-2px;box-shadow:inset 0 0 0 3px var(--rec-border);background:${winProbColor(0.8, 0, 1)}"></i>recommended plan</span>
       ${loserLegend}
     </div>`;
 }
