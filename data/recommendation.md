@@ -1,55 +1,54 @@
-# Hakim League — Week 8 (2026) — Consolation Pool
+# Hakim League — Week 9 (2026) — Consolation Pool
 
 - Lives model: **1 remaining** — 1 realized loss(es) already deducted, 1 bought back (out on next loss)
 - Double-Dip team: **BAL** (usable 2×; 3× if also the Wk6 loser)
-- Win-prob sources: odds-api:28
+- Win-prob sources: odds-api:30
 - Public pick %: survivorgrid
-- Opponent roster: all_picks.csv (95 entrants, 59 alive)
-- Teams used: LAC×1, TB×1, SF×1, MIN×1, HOU×1, NYJ×1
+- Opponent roster: all_picks.csv (70 entrants, 36 alive)
+- Teams used: LAC×1, TB×1, SF×1, MIN×1, HOU×1, NYJ×1, WAS×1
 
-## ✅ Week 8 pick: **JAX (Jacksonville Jaguars)**
-- Market win probability: **79.3%**  |  public 15.2%
-- **Expected weeks survived (of 18, 1 lives): 4.3**
-- P(reach season end still alive) = 3.5%  ·  P(never lose all year) = 3.5%
-- Expected cumulative point differential: +112.0 (deep tiebreaker only)
-- Implied plan: `W8:JAX  W9:SEA  W10:LA  W11:BUF  W12:DAL  W13:DEN`
+## ✅ Week 9 pick: **SEA (Seattle Seahawks)**
+- Market win probability: **83.3%**  |  public 16.4%
+- **Expected weeks survived (of 18, 1 lives): 4.4**
+- P(reach season end still alive) = 4.8%  ·  P(never lose all year) = 4.8%
+- Expected cumulative point differential: +105.5 (deep tiebreaker only)
+- Implied plan: `W9:SEA  W10:LA  W11:BUF  W12:JAX  W13:DEN  W14:DET`
 
 ## Optimal season plan (this pool)
-`W8:CIN  W9:SEA  W10:LA  W11:BUF  W12:JAX  W13:DEN  W14:DET  W15:GB+KC  W16:BAL  W17:DAL  W18:NE`
-- E[weeks survived] = **4.5** / 18  ·  P(reach end alive) = 4.4%  ·  P(never lose) = 4.4%  ·  E[pt diff] = +119.0
-- Double-Dip **BAL** used in weeks: [16]
+`W9:SEA  W10:LA  W11:BUF  W12:JAX  W13:DEN  W14:DET  W15:GB+KC  W16:CIN  W17:DAL  W18:NE`
+- E[weeks survived] = **4.4** / 18  ·  P(reach end alive) = 4.8%  ·  P(never lose) = 4.8%  ·  E[pt diff] = +105.5
+- Double-Dip **BAL** used in weeks: (held in reserve)
 
 ## Ranked options
 |   rank | team   |   win_% |   public_% |   E[wks] |   P(end)_% |   E[pt diff] | plan                                      |
 |-------:|:-------|--------:|-----------:|---------:|-----------:|-------------:|:------------------------------------------|
-|      1 | JAX    |    79.3 |       15.2 |     4.26 |        3.5 |        112   | W8:JAX  W9:SEA  W10:LA  W11:BUF  W12:DAL  |
-|      2 | CIN    |    81.7 |       37.5 |     4.47 |        4.4 |        119   | W8:CIN  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|      3 | DAL    |    73   |        6.4 |     4.09 |        3.6 |        113   | W8:DAL  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|      4 | WAS    |    69.1 |        0.9 |     3.93 |        3.8 |        114   | W8:WAS  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|      5 | NE     |    74.3 |       17   |     4.15 |        3.7 |        112.5 | W8:NE  W9:SEA  W10:LA  W11:BUF  W12:JAX   |
-|      6 | LA     |    72.1 |       13   |     4.06 |        3.4 |        110.5 | W8:LA  W9:SEA  W10:JAX  W11:BUF  W12:DAL  |
-|      7 | PIT    |    63.5 |        0.7 |     3.69 |        3.5 |        112   | W8:PIT  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|      8 | GB     |    64.1 |        3   |     3.68 |        2.3 |        101   | W8:GB  W9:SEA  W10:JAX  W11:BUF  W12:DAL  |
-|      9 | DET    |    62.7 |        0.3 |     3.62 |        3   |        107.5 | W8:DET  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     10 | SEA    |    61.5 |        0.4 |     3.52 |        3   |        108.5 | W8:SEA  W9:KC  W10:LA  W11:BUF  W12:JAX   |
-|     11 | BUF    |    61.7 |        2.4 |     3.54 |        2.6 |        103   | W8:BUF  W9:SEA  W10:JAX  W11:KC  W12:DAL  |
-|     12 | KC     |    51.1 |        0.2 |     3.16 |        2.6 |        108.5 | W8:KC  W9:SEA  W10:LA  W11:BUF  W12:JAX   |
-|     13 | DEN    |    48.9 |        0.1 |     2.99 |        1.9 |         96.5 | W8:DEN  W9:SEA  W10:JAX  W11:BUF  W12:DAL |
-|     14 | LV     |    46.5 |        1.7 |     2.98 |        2.5 |        107   | W8:LV  W9:SEA  W10:LA  W11:BUF  W12:JAX   |
-|     15 | ATL    |    44.7 |        0.2 |     2.9  |        2.4 |        106.5 | W8:ATL  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     16 | CHI    |    38.5 |        0.1 |     2.64 |        2.1 |        105.5 | W8:CHI  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     17 | BAL    |    38.3 |        0   |     2.63 |        2.1 |        105.5 | W8:BAL  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     18 | CLE    |    36.5 |        0.1 |     2.55 |        2   |        105   | W8:CLE  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     19 | CAR    |    35.9 |        0.1 |     2.52 |        2   |        105   | W8:CAR  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     20 | PHI    |    30.9 |        0.1 |     2.31 |        1.7 |        103   | W8:PHI  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     21 | ARI    |    27   |        0.1 |     2.15 |        1.5 |        101.5 | W8:ARI  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     22 | MIA    |    25.7 |        0   |     2.09 |        1.4 |        101.5 | W8:MIA  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     23 | IND    |    20.7 |        0   |     1.88 |        1.1 |         99   | W8:IND  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
-|     24 | TEN    |    18.3 |        0.1 |     1.78 |        1   |         98   | W8:TEN  W9:SEA  W10:LA  W11:BUF  W12:JAX  |
+|      1 | SEA    |    83.3 |       16.4 |     4.38 |        4.8 |        105.5 | W9:SEA  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|      2 | KC     |    80.1 |       19.2 |     4.32 |        5.8 |        108   | W9:KC  W10:LA  W11:BUF  W12:JAX  W13:DEN  |
+|      3 | JAX    |    81.2 |       11.6 |     4.14 |        4.9 |        102.5 | W9:JAX  W10:LA  W11:BUF  W12:DAL  W13:DEN |
+|      4 | CHI    |    71.2 |        8.2 |     3.95 |        5.1 |        104.5 | W9:CHI  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|      5 | DAL    |    68.1 |        4.3 |     3.82 |        4.9 |        104.5 | W9:DAL  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|      6 | LA     |    67.6 |        2.2 |     3.77 |        4.7 |        101   | W9:LA  W10:BUF  W11:KC  W12:JAX  W13:DEN  |
+|      7 | DET    |    73.3 |       25.1 |     3.96 |        4.1 |         99   | W9:DET  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|      8 | NYG    |    62.3 |        1.9 |     3.58 |        4.5 |        101.5 | W9:NYG  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|      9 | NE     |    61.1 |        0.1 |     3.53 |        4.2 |         99.5 | W9:NE  W10:LA  W11:BUF  W12:JAX  W13:DEN  |
+|     10 | BUF    |    62.3 |        0.5 |     3.48 |        4.2 |         98.5 | W9:BUF  W10:LA  W11:KC  W12:JAX  W13:DEN  |
+|     11 | CIN    |    60.1 |        0.9 |     3.48 |        4.1 |        100   | W9:CIN  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     12 | NO     |    59.3 |        0.3 |     3.46 |        4.3 |        101.5 | W9:NO  W10:LA  W11:BUF  W12:JAX  W13:DEN  |
+|     13 | DEN    |    58   |        1.5 |     3.25 |        2.8 |         90.5 | W9:DEN  W10:LA  W11:BUF  W12:JAX  W13:SEA |
+|     14 | CAR    |    42   |        0   |     2.74 |        3   |         96   | W9:CAR  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     15 | CLE    |    40.7 |        0.3 |     2.68 |        2.9 |         95.5 | W9:CLE  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     16 | ATL    |    39.9 |        0   |     2.65 |        2.9 |         95.5 | W9:ATL  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     17 | GB     |    38.9 |        0.1 |     2.59 |        2.3 |         91   | W9:GB  W10:LA  W11:BUF  W12:JAX  W13:DEN  |
+|     18 | PHI    |    37.7 |        0.1 |     2.56 |        2.7 |         95.5 | W9:PHI  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     19 | IND    |    31.9 |        0   |     2.32 |        2.3 |         92.5 | W9:IND  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     20 | MIA    |    26.7 |        0   |     2.11 |        1.9 |         91.5 | W9:MIA  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     21 | LV     |    19.9 |        0   |     1.82 |        1.4 |         88.5 | W9:LV  W10:LA  W11:BUF  W12:JAX  W13:DEN  |
+|     22 | BAL    |    18.8 |        0   |     1.78 |        1.4 |         88.5 | W9:BAL  W10:LA  W11:BUF  W12:JAX  W13:DEN |
+|     23 | ARI    |    16.7 |        0   |     1.69 |        1.2 |         86   | W9:ARI  W10:LA  W11:BUF  W12:JAX  W13:DEN |
 
 ## Charts
-- `week_08_hakim_win_probability.png`
-- `week_08_hakim_pick_distribution.png`
-- `week_08_hakim_best_picks.png`
-- `week_08_hakim_teams_remaining.png`
-- `week_08_hakim_ranked_table.png`
+- `week_09_hakim_win_probability.png`
+- `week_09_hakim_pick_distribution.png`
+- `week_09_hakim_best_picks.png`
+- `week_09_hakim_teams_remaining.png`
+- `week_09_hakim_ranked_table.png`
