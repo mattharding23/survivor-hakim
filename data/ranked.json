@@ -1,6 +1,6 @@
 {
   "week": 9,
-  "generated_at": "2026-11-04T15:48:26.004321+00:00",
+  "generated_at": "2026-11-04T16:06:15.209149+00:00",
   "mode": "consolation",
   "lives": 1,
   "lives_max": 1,
@@ -19,6 +19,48 @@
     "NYJ": 1,
     "WAS": 1
   },
+  "my_picks": [
+    {
+      "week": 1,
+      "team": "LAC",
+      "role": "win"
+    },
+    {
+      "week": 2,
+      "team": "TB",
+      "role": "win"
+    },
+    {
+      "week": 3,
+      "team": "SF",
+      "role": "win"
+    },
+    {
+      "week": 4,
+      "team": "MIN",
+      "role": "win"
+    },
+    {
+      "week": 5,
+      "team": "HOU",
+      "role": "win"
+    },
+    {
+      "week": 6,
+      "team": "LAC",
+      "role": "loser"
+    },
+    {
+      "week": 7,
+      "team": "NYJ",
+      "role": "win"
+    },
+    {
+      "week": 8,
+      "team": "WAS",
+      "role": "win"
+    }
+  ],
   "teams": [
     {
       "team": "SEA",
