@@ -8,4 +8,5 @@ week,team,role
 7,NYJ,win
 8,WAS,win
 9,KC,win
+10,LAR,win
 # week,team,role  — role: win (default) | loser (Wk6) | w15a | w15b
